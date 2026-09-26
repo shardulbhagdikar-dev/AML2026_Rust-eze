@@ -1,0 +1,16 @@
+{
+  "strategy": "token_name",
+  "s1_entities": 10000,
+  "true_matches": 34768,
+  "true_matches_found": 16525,
+  "candidate_recall": 0.475293373216751,
+  "total_candidates": 14811249,
+  "mean_candidates_per_s1": 1481.1249,
+  "median_candidates_per_s1": 1497.0,
+  "p95_candidates_per_s1": 2199.0,
+  "p99_candidates_per_s1": 2502.040000000001,
+  "max_candidates_per_s1": 3599,
+  "zero_candidate_s1": 0,
+  "zero_candidate_rate": 0.0,
+  "runtime_seconds": 15.780576229095459
+}

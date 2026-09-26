@@ -1,0 +1,157 @@
+[2026-09-26 12:53:49] ======================================================================
+[2026-09-26 12:53:49] E001.5 SCRIPT / REPRESENTATION ANALYSIS
+[2026-09-26 12:53:49] ======================================================================
+[2026-09-26 12:53:49] S1: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source1.tsv
+[2026-09-26 12:53:49] S2: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source2.tsv
+[2026-09-26 12:53:49] S3: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source3.tsv
+[2026-09-26 12:53:49] GT: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_ground_truth.tsv
+[2026-09-26 12:53:49] ======================================================================
+[2026-09-26 12:53:49] PHASE 1: SOURCE SCRIPT DISTRIBUTION
+[2026-09-26 12:53:49] ======================================================================
+[2026-09-26 12:53:49] Starting source analysis: S1
+[2026-09-26 12:53:49] File: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source1.tsv
+[2026-09-26 12:53:52] S1: 100,000 rows | 40,564 rows/s | elapsed 0.0 min
+[2026-09-26 12:54:04] S1: 600,000 rows | 41,488 rows/s | elapsed 0.2 min
+[2026-09-26 12:54:15] S1: 1,100,000 rows | 41,682 rows/s | elapsed 0.4 min
+[2026-09-26 12:54:30] S1: 1,600,000 rows | 38,878 rows/s | elapsed 0.7 min
+[2026-09-26 12:54:44] S1: 2,100,000 rows | 37,911 rows/s | elapsed 0.9 min
+[2026-09-26 12:54:48] Completed S1
+[2026-09-26 12:54:48] Starting source analysis: S2
+[2026-09-26 12:54:48] File: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source2.tsv
+[2026-09-26 12:54:50] S2: 100,000 rows | 39,468 rows/s | elapsed 0.0 min
+[2026-09-26 12:55:03] S2: 600,000 rows | 38,138 rows/s | elapsed 0.3 min
+[2026-09-26 12:55:16] S2: 1,100,000 rows | 38,815 rows/s | elapsed 0.5 min
+[2026-09-26 12:55:31] S2: 1,600,000 rows | 37,099 rows/s | elapsed 0.7 min
+[2026-09-26 12:55:42] S2: 2,100,000 rows | 38,420 rows/s | elapsed 0.9 min
+[2026-09-26 12:55:54] S2: 2,600,000 rows | 39,018 rows/s | elapsed 1.1 min
+[2026-09-26 12:56:06] S2: 3,100,000 rows | 39,759 rows/s | elapsed 1.3 min
+[2026-09-26 12:56:17] S2: 3,600,000 rows | 40,168 rows/s | elapsed 1.5 min
+[2026-09-26 12:56:30] S2: 4,100,000 rows | 39,864 rows/s | elapsed 1.7 min
+[2026-09-26 12:56:44] S2: 4,600,000 rows | 39,428 rows/s | elapsed 1.9 min
+[2026-09-26 12:56:55] S2: 5,034,616 rows | 39,436 rows/s | elapsed 2.1 min
+[2026-09-26 12:56:55] Completed S2
+[2026-09-26 12:56:55] Starting source analysis: S3
+[2026-09-26 12:56:55] File: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source3.tsv
+[2026-09-26 12:56:58] S3: 100,000 rows | 37,495 rows/s | elapsed 0.0 min
+[2026-09-26 12:57:11] S3: 600,000 rows | 38,544 rows/s | elapsed 0.3 min
+[2026-09-26 12:57:24] S3: 1,100,000 rows | 38,482 rows/s | elapsed 0.5 min
+[2026-09-26 12:57:37] S3: 1,600,000 rows | 38,383 rows/s | elapsed 0.7 min
+[2026-09-26 12:57:50] S3: 2,100,000 rows | 38,411 rows/s | elapsed 0.9 min
+[2026-09-26 12:58:03] S3: 2,600,000 rows | 38,375 rows/s | elapsed 1.1 min
+[2026-09-26 12:58:16] S3: 3,100,000 rows | 38,593 rows/s | elapsed 1.3 min
+[2026-09-26 12:58:27] S3: 3,600,000 rows | 39,153 rows/s | elapsed 1.5 min
+[2026-09-26 12:58:39] S3: 4,100,000 rows | 39,581 rows/s | elapsed 1.7 min
+[2026-09-26 12:58:50] S3: 4,600,000 rows | 39,968 rows/s | elapsed 1.9 min
+[2026-09-26 12:59:02] S3: 5,100,000 rows | 40,227 rows/s | elapsed 2.1 min
+[2026-09-26 12:59:06] Completed S3
+[2026-09-26 12:59:06] ======================================================================
+[2026-09-26 12:59:06] PHASE 2: TRUE-PAIR SCRIPT ANALYSIS
+[2026-09-26 12:59:06] ======================================================================
+[2026-09-26 12:59:06] Building script lookup for S1
+[2026-09-26 12:59:09] S1 lookup: 100,000 rows | 39,146 rows/s
+[2026-09-26 12:59:21] S1 lookup: 600,000 rows | 40,280 rows/s
+[2026-09-26 12:59:37] S1 lookup: 1,100,000 rows | 35,963 rows/s
+[2026-09-26 12:59:54] S1 lookup: 1,600,000 rows | 33,396 rows/s
+[2026-09-26 13:00:08] S1 lookup: 2,100,000 rows | 33,887 rows/s
+[2026-09-26 13:00:11] S1 lookup complete: 2,206,821 records
+[2026-09-26 13:00:11] Building script lookup for S2
+[2026-09-26 13:00:15] S2 lookup: 100,000 rows | 32,581 rows/s
+[2026-09-26 13:00:29] S2 lookup: 600,000 rows | 33,908 rows/s
+[2026-09-26 13:00:44] S2 lookup: 1,100,000 rows | 33,343 rows/s
+[2026-09-26 13:01:04] S2 lookup: 1,600,000 rows | 30,495 rows/s
+[2026-09-26 13:01:25] S2 lookup: 2,100,000 rows | 28,386 rows/s
+[2026-09-26 13:01:45] S2 lookup: 2,600,000 rows | 27,835 rows/s
+[2026-09-26 13:02:06] S2 lookup: 3,100,000 rows | 27,161 rows/s
+[2026-09-26 13:02:23] S2 lookup: 3,600,000 rows | 27,392 rows/s
+[2026-09-26 13:02:38] S2 lookup: 4,100,000 rows | 27,907 rows/s
+[2026-09-26 13:02:54] S2 lookup: 4,600,000 rows | 28,271 rows/s
+[2026-09-26 13:03:08] S2 lookup: 5,034,616 rows | 28,448 rows/s
+[2026-09-26 13:03:08] S2 lookup complete: 5,034,616 records
+[2026-09-26 13:03:08] Building script lookup for S3
+[2026-09-26 13:03:11] S3 lookup: 100,000 rows | 32,876 rows/s
+[2026-09-26 13:03:27] S3 lookup: 600,000 rows | 31,748 rows/s
+[2026-09-26 13:03:42] S3 lookup: 1,100,000 rows | 32,409 rows/s
+[2026-09-26 13:03:58] S3 lookup: 1,600,000 rows | 32,485 rows/s
+[2026-09-26 13:04:13] S3 lookup: 2,100,000 rows | 32,455 rows/s
+[2026-09-26 13:04:27] S3 lookup: 2,600,000 rows | 33,061 rows/s
+[2026-09-26 13:04:46] S3 lookup: 3,100,000 rows | 31,777 rows/s
+[2026-09-26 13:05:00] S3 lookup: 3,600,000 rows | 32,413 rows/s
+[2026-09-26 13:05:12] S3 lookup: 4,100,000 rows | 33,180 rows/s
+[2026-09-26 13:05:28] S3 lookup: 4,600,000 rows | 33,063 rows/s
+[2026-09-26 13:05:43] S3 lookup: 5,100,000 rows | 33,039 rows/s
+[2026-09-26 13:05:48] S3 lookup complete: 5,285,603 records
+[2026-09-26 13:14:25] ======================================================================
+[2026-09-26 13:14:25] E001.5 SCRIPT / REPRESENTATION ANALYSIS
+[2026-09-26 13:14:25] ======================================================================
+[2026-09-26 13:14:25] S1: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source1.tsv
+[2026-09-26 13:14:25] S2: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source2.tsv
+[2026-09-26 13:14:25] S3: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source3.tsv
+[2026-09-26 13:14:25] GT: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_ground_truth.tsv
+[2026-09-26 13:14:25] ======================================================================
+[2026-09-26 13:14:25] PHASE 1: SOURCE SCRIPT DISTRIBUTION
+[2026-09-26 13:14:25] ======================================================================
+[2026-09-26 13:14:25] Source distribution already exists; skipping Phase 1.
+[2026-09-26 13:14:25] ======================================================================
+[2026-09-26 13:14:25] PHASE 2: TRUE-PAIR SCRIPT ANALYSIS
+[2026-09-26 13:14:25] ======================================================================
+[2026-09-26 13:14:25] Ground-truth schema validated: source1_entity_id, matched_entity_ids
+[2026-09-26 13:14:25] Building script lookup for S1
+[2026-09-26 13:14:28] S1 lookup: 100,000 rows | 39,813 rows/s
+[2026-09-26 13:14:40] S1 lookup: 600,000 rows | 39,623 rows/s
+[2026-09-26 13:14:55] S1 lookup: 1,100,000 rows | 36,699 rows/s
+[2026-09-26 13:15:10] S1 lookup: 1,600,000 rows | 35,714 rows/s
+[2026-09-26 13:15:25] S1 lookup: 2,100,000 rows | 34,855 rows/s
+[2026-09-26 13:15:29] S1 lookup complete: 2,206,821 records
+[2026-09-26 13:15:29] Building script lookup for S2
+[2026-09-26 13:15:32] S2 lookup: 100,000 rows | 35,297 rows/s
+[2026-09-26 13:15:44] S2 lookup: 600,000 rows | 39,134 rows/s
+[2026-09-26 13:15:56] S2 lookup: 1,100,000 rows | 41,036 rows/s
+[2026-09-26 13:16:08] S2 lookup: 1,600,000 rows | 41,199 rows/s
+[2026-09-26 13:16:19] S2 lookup: 2,100,000 rows | 41,476 rows/s
+[2026-09-26 13:16:31] S2 lookup: 2,600,000 rows | 41,716 rows/s
+[2026-09-26 13:16:43] S2 lookup: 3,100,000 rows | 41,646 rows/s
+[2026-09-26 13:16:55] S2 lookup: 3,600,000 rows | 41,966 rows/s
+[2026-09-26 13:17:07] S2 lookup: 4,100,000 rows | 41,651 rows/s
+[2026-09-26 13:17:20] S2 lookup: 4,600,000 rows | 41,522 rows/s
+[2026-09-26 13:17:30] S2 lookup: 5,034,616 rows | 41,585 rows/s
+[2026-09-26 13:17:30] S2 lookup complete: 5,034,616 records
+[2026-09-26 13:17:30] Building script lookup for S3
+[2026-09-26 13:17:32] S3 lookup: 100,000 rows | 40,641 rows/s
+[2026-09-26 13:17:44] S3 lookup: 600,000 rows | 41,809 rows/s
+[2026-09-26 13:17:56] S3 lookup: 1,100,000 rows | 41,842 rows/s
+[2026-09-26 13:18:08] S3 lookup: 1,600,000 rows | 41,644 rows/s
+[2026-09-26 13:18:21] S3 lookup: 2,100,000 rows | 41,117 rows/s
+[2026-09-26 13:18:37] S3 lookup: 2,600,000 rows | 38,735 rows/s
+[2026-09-26 13:18:50] S3 lookup: 3,100,000 rows | 38,597 rows/s
+[2026-09-26 13:19:02] S3 lookup: 3,600,000 rows | 39,043 rows/s
+[2026-09-26 13:19:14] S3 lookup: 4,100,000 rows | 39,375 rows/s
+[2026-09-26 13:19:26] S3 lookup: 4,600,000 rows | 39,630 rows/s
+[2026-09-26 13:19:38] S3 lookup: 5,100,000 rows | 39,789 rows/s
+[2026-09-26 13:19:43] S3 lookup complete: 5,285,603 records
+[2026-09-26 13:20:00] GT chunk 0 complete | 100,000 S1 records processed | 345,997 true pairs | 5,796 S1/s | elapsed 0.3 min
+[2026-09-26 13:20:06] GT chunk 1 complete | 200,000 S1 records processed | 693,069 true pairs | 8,731 S1/s | elapsed 0.4 min
+[2026-09-26 13:20:08] GT chunk 2 complete | 300,000 S1 records processed | 1,038,755 true pairs | 11,797 S1/s | elapsed 0.4 min
+[2026-09-26 13:20:10] GT chunk 3 complete | 400,000 S1 records processed | 1,384,645 true pairs | 14,418 S1/s | elapsed 0.5 min
+[2026-09-26 13:20:13] GT chunk 4 complete | 500,000 S1 records processed | 1,730,506 true pairs | 16,578 S1/s | elapsed 0.5 min
+[2026-09-26 13:20:15] GT chunk 5 complete | 600,000 S1 records processed | 2,076,133 true pairs | 18,540 S1/s | elapsed 0.5 min
+[2026-09-26 13:20:17] GT chunk 6 complete | 700,000 S1 records processed | 2,422,079 true pairs | 20,477 S1/s | elapsed 0.6 min
+[2026-09-26 13:20:19] GT chunk 7 complete | 800,000 S1 records processed | 2,768,341 true pairs | 21,896 S1/s | elapsed 0.6 min
+[2026-09-26 13:20:21] GT chunk 8 complete | 900,000 S1 records processed | 3,114,006 true pairs | 23,446 S1/s | elapsed 0.6 min
+[2026-09-26 13:20:23] GT chunk 9 complete | 1,000,000 S1 records processed | 3,460,754 true pairs | 24,516 S1/s | elapsed 0.7 min
+[2026-09-26 13:20:25] GT chunk 10 complete | 1,100,000 S1 records processed | 3,806,818 true pairs | 25,806 S1/s | elapsed 0.7 min
+[2026-09-26 13:20:28] GT chunk 11 complete | 1,200,000 S1 records processed | 4,153,634 true pairs | 26,708 S1/s | elapsed 0.7 min
+[2026-09-26 13:20:30] GT chunk 12 complete | 1,300,000 S1 records processed | 4,498,735 true pairs | 27,760 S1/s | elapsed 0.8 min
+[2026-09-26 13:20:32] GT chunk 13 complete | 1,400,000 S1 records processed | 4,844,772 true pairs | 28,410 S1/s | elapsed 0.8 min
+[2026-09-26 13:20:34] GT chunk 14 complete | 1,500,000 S1 records processed | 5,190,860 true pairs | 29,380 S1/s | elapsed 0.9 min
+[2026-09-26 13:20:36] GT chunk 15 complete | 1,600,000 S1 records processed | 5,537,259 true pairs | 30,082 S1/s | elapsed 0.9 min
+[2026-09-26 13:20:38] GT chunk 16 complete | 1,700,000 S1 records processed | 5,884,185 true pairs | 30,657 S1/s | elapsed 0.9 min
+[2026-09-26 13:20:40] GT chunk 17 complete | 1,800,000 S1 records processed | 6,230,774 true pairs | 31,281 S1/s | elapsed 1.0 min
+[2026-09-26 13:20:42] GT chunk 18 complete | 1,900,000 S1 records processed | 6,576,314 true pairs | 31,997 S1/s | elapsed 1.0 min
+[2026-09-26 13:20:44] GT chunk 19 complete | 2,000,000 S1 records processed | 6,921,867 true pairs | 32,533 S1/s | elapsed 1.0 min
+[2026-09-26 13:20:46] GT chunk 20 complete | 2,100,000 S1 records processed | 7,268,445 true pairs | 32,934 S1/s | elapsed 1.1 min
+[2026-09-26 13:20:48] GT chunk 21 complete | 2,200,000 S1 records processed | 7,614,812 true pairs | 33,559 S1/s | elapsed 1.1 min
+[2026-09-26 13:20:48] GT chunk 22 complete | 2,206,821 S1 records processed | 7,638,365 true pairs | 33,563 S1/s | elapsed 1.1 min
+[2026-09-26 13:20:48] TRUE-PAIR ANALYSIS COMPLETE
+[2026-09-26 13:20:49] ======================================================================
+[2026-09-26 13:20:49] E001.5 COMPLETE | total runtime: 6.40 minutes
+[2026-09-26 13:20:49] ======================================================================

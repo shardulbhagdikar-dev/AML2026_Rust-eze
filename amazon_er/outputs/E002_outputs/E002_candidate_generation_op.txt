@@ -1,0 +1,403 @@
+Conclusion - 
+Exact matching is very efficient but misses too many matches.
+Token matching finds more matches but produces way too many candidates.
+Combining everything is also way too large.
+
+
+
+PS E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\experiments\E002> python E002_candidate_generation.py `
+>>   --source1 "E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source1.tsv" `
+>>   --source2 "E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source2.tsv" `
+>>   --source3 "E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source3.tsv" `
+>>   --ground-truth "E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_ground_truth.tsv" `
+>>   --output "E:\Amazon_ML_Challenge\experiments\E002" `
+>>   --sample-size 10000 `
+>>   --batch-size 500
+
+Loading Source 1: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source1.tsv
+Source 1: 2,206,821 rows
+
+Loading Source 2: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source2.tsv
+Source 2: 5,034,616 rows
+
+Loading Source 3: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source3.tsv
+Source 3: 5,285,603 rows
+
+Loading ground truth: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_ground_truth.tsv
+Ground-truth S1 entities: 2,206,821
+
+Using S1 sample: 10,000
+
+Total target records: 10,320,219
+
+Building target index...
+  indexed 100,000/10,320,219 (1.0%) | 88,947 rows/s
+  indexed 200,000/10,320,219 (1.9%) | 67,438 rows/s
+  indexed 300,000/10,320,219 (2.9%) | 74,498 rows/s
+  indexed 400,000/10,320,219 (3.9%) | 78,489 rows/s
+  indexed 500,000/10,320,219 (4.8%) | 72,704 rows/s
+  indexed 600,000/10,320,219 (5.8%) | 75,745 rows/s
+  indexed 700,000/10,320,219 (6.8%) | 77,799 rows/s
+  indexed 800,000/10,320,219 (7.8%) | 79,417 rows/s
+  indexed 900,000/10,320,219 (8.7%) | 75,020 rows/s
+  indexed 1,000,000/10,320,219 (9.7%) | 76,765 rows/s
+  indexed 1,100,000/10,320,219 (10.7%) | 78,145 rows/s
+  indexed 1,200,000/10,320,219 (11.6%) | 78,988 rows/s
+  indexed 1,300,000/10,320,219 (12.6%) | 80,012 rows/s
+  indexed 1,400,000/10,320,219 (13.6%) | 75,693 rows/s
+  indexed 1,500,000/10,320,219 (14.5%) | 76,668 rows/s
+  indexed 1,600,000/10,320,219 (15.5%) | 77,047 rows/s
+  indexed 1,700,000/10,320,219 (16.5%) | 77,920 rows/s
+  indexed 1,800,000/10,320,219 (17.4%) | 78,702 rows/s
+  indexed 1,900,000/10,320,219 (18.4%) | 79,349 rows/s
+  indexed 2,000,000/10,320,219 (19.4%) | 79,979 rows/s
+  indexed 2,100,000/10,320,219 (20.3%) | 76,067 rows/s
+  indexed 2,200,000/10,320,219 (21.3%) | 76,623 rows/s
+  indexed 2,300,000/10,320,219 (22.3%) | 77,226 rows/s
+  indexed 2,400,000/10,320,219 (23.3%) | 77,755 rows/s
+  indexed 2,500,000/10,320,219 (24.2%) | 78,255 rows/s
+  indexed 2,600,000/10,320,219 (25.2%) | 78,634 rows/s
+  indexed 2,700,000/10,320,219 (26.2%) | 79,073 rows/s
+  indexed 2,800,000/10,320,219 (27.1%) | 79,209 rows/s
+  indexed 2,900,000/10,320,219 (28.1%) | 79,532 rows/s
+  indexed 3,000,000/10,320,219 (29.1%) | 76,154 rows/s
+  indexed 3,100,000/10,320,219 (30.0%) | 76,541 rows/s
+  indexed 3,200,000/10,320,219 (31.0%) | 76,775 rows/s
+  indexed 3,300,000/10,320,219 (32.0%) | 77,190 rows/s
+  indexed 3,400,000/10,320,219 (32.9%) | 77,441 rows/s
+  indexed 3,500,000/10,320,219 (33.9%) | 77,791 rows/s
+  indexed 3,600,000/10,320,219 (34.9%) | 78,174 rows/s
+  indexed 3,700,000/10,320,219 (35.9%) | 78,533 rows/s
+  indexed 3,800,000/10,320,219 (36.8%) | 78,855 rows/s
+  indexed 3,900,000/10,320,219 (37.8%) | 79,164 rows/s
+  indexed 4,000,000/10,320,219 (38.8%) | 79,388 rows/s
+  indexed 4,100,000/10,320,219 (39.7%) | 75,973 rows/s
+  indexed 4,200,000/10,320,219 (40.7%) | 76,198 rows/s
+  indexed 4,300,000/10,320,219 (41.7%) | 76,509 rows/s
+  indexed 4,400,000/10,320,219 (42.6%) | 76,803 rows/s
+  indexed 4,500,000/10,320,219 (43.6%) | 77,071 rows/s
+  indexed 4,600,000/10,320,219 (44.6%) | 77,275 rows/s
+  indexed 4,700,000/10,320,219 (45.5%) | 77,462 rows/s
+  indexed 4,800,000/10,320,219 (46.5%) | 77,655 rows/s
+  indexed 4,900,000/10,320,219 (47.5%) | 77,854 rows/s
+  indexed 5,000,000/10,320,219 (48.4%) | 77,982 rows/s
+  indexed 5,100,000/10,320,219 (49.4%) | 78,157 rows/s
+  indexed 5,200,000/10,320,219 (50.4%) | 78,324 rows/s
+  indexed 5,300,000/10,320,219 (51.4%) | 78,480 rows/s
+  indexed 5,400,000/10,320,219 (52.3%) | 78,640 rows/s
+  indexed 5,500,000/10,320,219 (53.3%) | 78,765 rows/s
+  indexed 5,600,000/10,320,219 (54.3%) | 75,453 rows/s
+  indexed 5,700,000/10,320,219 (55.2%) | 75,582 rows/s
+  indexed 5,800,000/10,320,219 (56.2%) | 75,736 rows/s
+  indexed 5,900,000/10,320,219 (57.2%) | 75,901 rows/s
+  indexed 6,000,000/10,320,219 (58.1%) | 76,070 rows/s
+  indexed 6,100,000/10,320,219 (59.1%) | 76,117 rows/s
+  indexed 6,200,000/10,320,219 (60.1%) | 76,203 rows/s
+  indexed 6,300,000/10,320,219 (61.0%) | 76,303 rows/s
+  indexed 6,400,000/10,320,219 (62.0%) | 76,387 rows/s
+  indexed 6,500,000/10,320,219 (63.0%) | 76,141 rows/s
+  indexed 6,600,000/10,320,219 (64.0%) | 76,199 rows/s
+  indexed 6,700,000/10,320,219 (64.9%) | 76,287 rows/s
+  indexed 6,800,000/10,320,219 (65.9%) | 76,376 rows/s
+  indexed 6,900,000/10,320,219 (66.9%) | 76,461 rows/s
+  indexed 7,000,000/10,320,219 (67.8%) | 76,558 rows/s
+  indexed 7,100,000/10,320,219 (68.8%) | 76,625 rows/s
+  indexed 7,200,000/10,320,219 (69.8%) | 76,706 rows/s
+  indexed 7,300,000/10,320,219 (70.7%) | 76,562 rows/s
+  indexed 7,400,000/10,320,219 (71.7%) | 73,806 rows/s
+  indexed 7,500,000/10,320,219 (72.7%) | 73,911 rows/s
+  indexed 7,600,000/10,320,219 (73.6%) | 74,021 rows/s
+  indexed 7,700,000/10,320,219 (74.6%) | 74,129 rows/s
+  indexed 7,800,000/10,320,219 (75.6%) | 74,227 rows/s
+  indexed 7,900,000/10,320,219 (76.5%) | 74,282 rows/s
+  indexed 8,000,000/10,320,219 (77.5%) | 74,280 rows/s
+  indexed 8,100,000/10,320,219 (78.5%) | 74,299 rows/s
+  indexed 8,200,000/10,320,219 (79.5%) | 74,320 rows/s
+  indexed 8,300,000/10,320,219 (80.4%) | 74,304 rows/s
+  indexed 8,400,000/10,320,219 (81.4%) | 74,352 rows/s
+  indexed 8,500,000/10,320,219 (82.4%) | 74,359 rows/s
+  indexed 8,600,000/10,320,219 (83.3%) | 74,395 rows/s
+  indexed 8,700,000/10,320,219 (84.3%) | 74,418 rows/s
+  indexed 8,800,000/10,320,219 (85.3%) | 74,437 rows/s
+  indexed 8,900,000/10,320,219 (86.2%) | 74,350 rows/s
+  indexed 9,000,000/10,320,219 (87.2%) | 74,313 rows/s
+  indexed 9,100,000/10,320,219 (88.2%) | 74,314 rows/s
+  indexed 9,200,000/10,320,219 (89.1%) | 74,328 rows/s
+  indexed 9,300,000/10,320,219 (90.1%) | 74,345 rows/s
+  indexed 9,400,000/10,320,219 (91.1%) | 74,236 rows/s
+  indexed 9,500,000/10,320,219 (92.1%) | 74,178 rows/s
+  indexed 9,600,000/10,320,219 (93.0%) | 74,159 rows/s
+  indexed 9,700,000/10,320,219 (94.0%) | 74,139 rows/s
+  indexed 9,800,000/10,320,219 (95.0%) | 71,442 rows/s
+  indexed 9,900,000/10,320,219 (95.9%) | 71,464 rows/s
+  indexed 10,000,000/10,320,219 (96.9%) | 71,491 rows/s
+  indexed 10,100,000/10,320,219 (97.9%) | 71,506 rows/s
+  indexed 10,200,000/10,320,219 (98.8%) | 71,553 rows/s
+  indexed 10,300,000/10,320,219 (99.8%) | 71,603 rows/s
+Index complete in 144.1s
+  exact name keys: 7,669,362
+  exact address keys: 8,847,510
+  name token keys: 1,520,672
+  name ngram keys: 139,901
+
+======================================================================
+STRATEGY: exact_name
+======================================================================
+[500/10,000] 5.0% | batch candidates=5,907 | total candidates=5,907 | rate=1,438 S1/s | ETA=0.1 min
+[1,000/10,000] 10.0% | batch candidates=6,839 | total candidates=12,746 | rate=1,786 S1/s | ETA=0.1 min
+[1,500/10,000] 15.0% | batch candidates=5,327 | total candidates=18,073 | rate=1,950 S1/s | ETA=0.1 min
+[2,000/10,000] 20.0% | batch candidates=5,122 | total candidates=23,195 | rate=2,045 S1/s | ETA=0.1 min
+[2,500/10,000] 25.0% | batch candidates=4,900 | total candidates=28,095 | rate=2,101 S1/s | ETA=0.1 min
+[3,000/10,000] 30.0% | batch candidates=4,740 | total candidates=32,835 | rate=2,140 S1/s | ETA=0.1 min
+[3,500/10,000] 35.0% | batch candidates=4,508 | total candidates=37,343 | rate=2,181 S1/s | ETA=0.0 min
+[4,000/10,000] 40.0% | batch candidates=5,102 | total candidates=42,445 | rate=2,229 S1/s | ETA=0.0 min
+[4,500/10,000] 45.0% | batch candidates=5,302 | total candidates=47,747 | rate=2,269 S1/s | ETA=0.0 min
+[5,000/10,000] 50.0% | batch candidates=3,917 | total candidates=51,664 | rate=2,291 S1/s | ETA=0.0 min
+[5,500/10,000] 55.0% | batch candidates=4,925 | total candidates=56,589 | rate=2,311 S1/s | ETA=0.0 min
+[6,000/10,000] 60.0% | batch candidates=5,134 | total candidates=61,723 | rate=2,343 S1/s | ETA=0.0 min
+[6,500/10,000] 65.0% | batch candidates=5,230 | total candidates=66,953 | rate=2,373 S1/s | ETA=0.0 min
+[7,000/10,000] 70.0% | batch candidates=4,134 | total candidates=71,087 | rate=2,408 S1/s | ETA=0.0 min
+[7,500/10,000] 75.0% | batch candidates=4,998 | total candidates=76,085 | rate=2,434 S1/s | ETA=0.0 min
+[8,000/10,000] 80.0% | batch candidates=3,284 | total candidates=79,369 | rate=2,461 S1/s | ETA=0.0 min
+[8,500/10,000] 85.0% | batch candidates=4,787 | total candidates=84,156 | rate=2,490 S1/s | ETA=0.0 min
+[9,000/10,000] 90.0% | batch candidates=3,767 | total candidates=87,923 | rate=2,500 S1/s | ETA=0.0 min
+[9,500/10,000] 95.0% | batch candidates=6,324 | total candidates=94,247 | rate=2,514 S1/s | ETA=0.0 min
+[10,000/10,000] 100.0% | batch candidates=6,386 | total candidates=100,633 | rate=2,537 S1/s | ETA=0.0 min
+
+RESULT
+--------------------------------------------------
+strategy                           : exact_name
+s1_entities                        : 10000
+true_matches                       : 34768
+true_matches_found                 : 7446
+candidate_recall                   : 0.214162
+total_candidates                   : 100633
+mean_candidates_per_s1             : 10.063300
+median_candidates_per_s1           : 1.000000
+p95_candidates_per_s1              : 64.000000
+p99_candidates_per_s1              : 175.010000
+max_candidates_per_s1              : 458
+zero_candidate_s1                  : 2989
+zero_candidate_rate                : 0.298900
+runtime_seconds                    : 3.946176
+
+======================================================================
+STRATEGY: exact_address
+======================================================================
+[500/10,000] 5.0% | batch candidates=159 | total candidates=159 | rate=87,414 S1/s | ETA=0.0 min
+[1,000/10,000] 10.0% | batch candidates=188 | total candidates=347 | rate=174,828 S1/s | ETA=0.0 min
+[1,500/10,000] 15.0% | batch candidates=184 | total candidates=531 | rate=59,013 S1/s | ETA=0.0 min
+[2,000/10,000] 20.0% | batch candidates=156 | total candidates=687 | rate=78,684 S1/s | ETA=0.0 min
+[2,500/10,000] 25.0% | batch candidates=146 | total candidates=833 | rate=61,171 S1/s | ETA=0.0 min
+[3,000/10,000] 30.0% | batch candidates=145 | total candidates=978 | rate=60,362 S1/s | ETA=0.0 min
+[3,500/10,000] 35.0% | batch candidates=146 | total candidates=1,124 | rate=62,124 S1/s | ETA=0.0 min
+[4,000/10,000] 40.0% | batch candidates=185 | total candidates=1,309 | rate=61,398 S1/s | ETA=0.0 min
+[4,500/10,000] 45.0% | batch candidates=194 | total candidates=1,503 | rate=60,599 S1/s | ETA=0.0 min
+[5,000/10,000] 50.0% | batch candidates=147 | total candidates=1,650 | rate=60,231 S1/s | ETA=0.0 min
+[5,500/10,000] 55.0% | batch candidates=218 | total candidates=1,868 | rate=62,923 S1/s | ETA=0.0 min
+[6,000/10,000] 60.0% | batch candidates=203 | total candidates=2,071 | rate=59,397 S1/s | ETA=0.0 min
+[6,500/10,000] 65.0% | batch candidates=155 | total candidates=2,226 | rate=61,807 S1/s | ETA=0.0 min
+[7,000/10,000] 70.0% | batch candidates=172 | total candidates=2,398 | rate=59,784 S1/s | ETA=0.0 min
+[7,500/10,000] 75.0% | batch candidates=193 | total candidates=2,591 | rate=59,712 S1/s | ETA=0.0 min
+[8,000/10,000] 80.0% | batch candidates=179 | total candidates=2,770 | rate=59,463 S1/s | ETA=0.0 min
+[8,500/10,000] 85.0% | batch candidates=161 | total candidates=2,931 | rate=60,294 S1/s | ETA=0.0 min
+[9,000/10,000] 90.0% | batch candidates=192 | total candidates=3,123 | rate=59,610 S1/s | ETA=0.0 min
+[9,500/10,000] 95.0% | batch candidates=152 | total candidates=3,275 | rate=59,845 S1/s | ETA=0.0 min
+[10,000/10,000] 100.0% | batch candidates=188 | total candidates=3,463 | rate=60,141 S1/s | ETA=0.0 min
+
+RESULT
+--------------------------------------------------
+strategy                           : exact_address
+s1_entities                        : 10000
+true_matches                       : 34768
+true_matches_found                 : 2803
+candidate_recall                   : 0.080620
+total_candidates                   : 3463
+mean_candidates_per_s1             : 0.346300
+median_candidates_per_s1           : 0.000000
+p95_candidates_per_s1              : 2.000000
+p99_candidates_per_s1              : 3.000000
+max_candidates_per_s1              : 14
+zero_candidate_s1                  : 7640
+zero_candidate_rate                : 0.764000
+runtime_seconds                    : 0.168275
+
+======================================================================
+STRATEGY: name_or_address
+======================================================================
+[500/10,000] 5.0% | batch candidates=6,045 | total candidates=6,045 | rate=15,579 S1/s | ETA=0.0 min
+[1,000/10,000] 10.0% | batch candidates=7,004 | total candidates=13,049 | rate=20,816 S1/s | ETA=0.0 min
+[1,500/10,000] 15.0% | batch candidates=5,491 | total candidates=18,540 | rate=23,597 S1/s | ETA=0.0 min
+[2,000/10,000] 20.0% | batch candidates=5,260 | total candidates=23,800 | rate=27,079 S1/s | ETA=0.0 min
+[2,500/10,000] 25.0% | batch candidates=5,028 | total candidates=28,828 | rate=29,637 S1/s | ETA=0.0 min
+[3,000/10,000] 30.0% | batch candidates=4,872 | total candidates=33,700 | rate=31,543 S1/s | ETA=0.0 min
+[3,500/10,000] 35.0% | batch candidates=4,638 | total candidates=38,338 | rate=33,319 S1/s | ETA=0.0 min
+[4,000/10,000] 40.0% | batch candidates=5,262 | total candidates=43,600 | rate=34,531 S1/s | ETA=0.0 min
+[4,500/10,000] 45.0% | batch candidates=5,479 | total candidates=49,079 | rate=35,138 S1/s | ETA=0.0 min
+[5,000/10,000] 50.0% | batch candidates=4,054 | total candidates=53,133 | rate=36,331 S1/s | ETA=0.0 min
+[5,500/10,000] 55.0% | batch candidates=5,111 | total candidates=58,244 | rate=37,323 S1/s | ETA=0.0 min
+[6,000/10,000] 60.0% | batch candidates=5,321 | total candidates=63,565 | rate=38,923 S1/s | ETA=0.0 min
+[6,500/10,000] 65.0% | batch candidates=5,365 | total candidates=68,930 | rate=38,679 S1/s | ETA=0.0 min
+[7,000/10,000] 70.0% | batch candidates=4,275 | total candidates=73,205 | rate=39,381 S1/s | ETA=0.0 min
+[7,500/10,000] 75.0% | batch candidates=5,160 | total candidates=78,365 | rate=39,942 S1/s | ETA=0.0 min
+[8,000/10,000] 80.0% | batch candidates=3,441 | total candidates=81,806 | rate=40,541 S1/s | ETA=0.0 min
+[8,500/10,000] 85.0% | batch candidates=4,913 | total candidates=86,719 | rate=40,974 S1/s | ETA=0.0 min
+[9,000/10,000] 90.0% | batch candidates=3,933 | total candidates=90,652 | rate=41,663 S1/s | ETA=0.0 min
+[9,500/10,000] 95.0% | batch candidates=6,455 | total candidates=97,107 | rate=41,756 S1/s | ETA=0.0 min
+[10,000/10,000] 100.0% | batch candidates=6,551 | total candidates=103,658 | rate=41,471 S1/s | ETA=0.0 min
+
+RESULT
+--------------------------------------------------
+strategy                           : name_or_address
+s1_entities                        : 10000
+true_matches                       : 34768
+true_matches_found                 : 9811
+candidate_recall                   : 0.282185
+total_candidates                   : 103658
+mean_candidates_per_s1             : 10.365800
+median_candidates_per_s1           : 2.000000
+p95_candidates_per_s1              : 64.000000
+p99_candidates_per_s1              : 176.010000
+max_candidates_per_s1              : 458
+zero_candidate_s1                  : 2352
+zero_candidate_rate                : 0.235200
+runtime_seconds                    : 0.243163
+
+======================================================================
+STRATEGY: token_name
+======================================================================
+[500/10,000] 5.0% | batch candidates=735,690 | total candidates=735,690 | rate=653 S1/s | ETA=0.2 min
+[1,000/10,000] 10.0% | batch candidates=740,670 | total candidates=1,476,360 | rate=640 S1/s | ETA=0.2 min
+[1,500/10,000] 15.0% | batch candidates=746,226 | total candidates=2,222,586 | rate=636 S1/s | ETA=0.2 min
+[2,000/10,000] 20.0% | batch candidates=732,385 | total candidates=2,954,971 | rate=635 S1/s | ETA=0.2 min
+[2,500/10,000] 25.0% | batch candidates=756,497 | total candidates=3,711,468 | rate=628 S1/s | ETA=0.2 min
+[3,000/10,000] 30.0% | batch candidates=738,921 | total candidates=4,450,389 | rate=627 S1/s | ETA=0.2 min
+[3,500/10,000] 35.0% | batch candidates=732,319 | total candidates=5,182,708 | rate=628 S1/s | ETA=0.2 min
+[4,000/10,000] 40.0% | batch candidates=735,794 | total candidates=5,918,502 | rate=629 S1/s | ETA=0.2 min
+[4,500/10,000] 45.0% | batch candidates=733,717 | total candidates=6,652,219 | rate=629 S1/s | ETA=0.1 min
+[5,000/10,000] 50.0% | batch candidates=748,487 | total candidates=7,400,706 | rate=628 S1/s | ETA=0.1 min
+[5,500/10,000] 55.0% | batch candidates=732,650 | total candidates=8,133,356 | rate=630 S1/s | ETA=0.1 min
+[6,000/10,000] 60.0% | batch candidates=736,151 | total candidates=8,869,507 | rate=630 S1/s | ETA=0.1 min
+[6,500/10,000] 65.0% | batch candidates=729,642 | total candidates=9,599,149 | rate=633 S1/s | ETA=0.1 min
+[7,000/10,000] 70.0% | batch candidates=720,558 | total candidates=10,319,707 | rate=632 S1/s | ETA=0.1 min
+[7,500/10,000] 75.0% | batch candidates=734,854 | total candidates=11,054,561 | rate=634 S1/s | ETA=0.1 min
+[8,000/10,000] 80.0% | batch candidates=774,948 | total candidates=11,829,509 | rate=632 S1/s | ETA=0.1 min
+[8,500/10,000] 85.0% | batch candidates=740,785 | total candidates=12,570,294 | rate=633 S1/s | ETA=0.0 min
+[9,000/10,000] 90.0% | batch candidates=747,395 | total candidates=13,317,689 | rate=634 S1/s | ETA=0.0 min
+[9,500/10,000] 95.0% | batch candidates=737,687 | total candidates=14,055,376 | rate=635 S1/s | ETA=0.0 min
+[10,000/10,000] 100.0% | batch candidates=755,873 | total candidates=14,811,249 | rate=634 S1/s | ETA=0.0 min
+
+RESULT
+--------------------------------------------------
+strategy                           : token_name
+s1_entities                        : 10000
+true_matches                       : 34768
+true_matches_found                 : 16525
+candidate_recall                   : 0.475293
+total_candidates                   : 14811249
+mean_candidates_per_s1             : 1481.124900
+median_candidates_per_s1           : 1497.000000
+p95_candidates_per_s1              : 2199.000000
+p99_candidates_per_s1              : 2502.040000
+max_candidates_per_s1              : 3599
+zero_candidate_s1                  : 0
+zero_candidate_rate                : 0.000000
+runtime_seconds                    : 15.780576
+
+======================================================================
+STRATEGY: char_name
+======================================================================
+[500/10,000] 5.0% | batch candidates=700,364 | total candidates=700,364 | rate=393 S1/s | ETA=0.4 min
+[1,000/10,000] 10.0% | batch candidates=691,946 | total candidates=1,392,310 | rate=390 S1/s | ETA=0.4 min
+[1,500/10,000] 15.0% | batch candidates=686,398 | total candidates=2,078,708 | rate=386 S1/s | ETA=0.4 min
+[2,000/10,000] 20.0% | batch candidates=678,680 | total candidates=2,757,388 | rate=387 S1/s | ETA=0.3 min
+[2,500/10,000] 25.0% | batch candidates=697,184 | total candidates=3,454,572 | rate=384 S1/s | ETA=0.3 min
+[3,000/10,000] 30.0% | batch candidates=703,563 | total candidates=4,158,135 | rate=384 S1/s | ETA=0.3 min
+[3,500/10,000] 35.0% | batch candidates=679,317 | total candidates=4,837,452 | rate=383 S1/s | ETA=0.3 min
+[4,000/10,000] 40.0% | batch candidates=673,699 | total candidates=5,511,151 | rate=383 S1/s | ETA=0.3 min
+[4,500/10,000] 45.0% | batch candidates=682,543 | total candidates=6,193,694 | rate=382 S1/s | ETA=0.2 min
+[5,000/10,000] 50.0% | batch candidates=693,215 | total candidates=6,886,909 | rate=382 S1/s | ETA=0.2 min
+[5,500/10,000] 55.0% | batch candidates=689,477 | total candidates=7,576,386 | rate=381 S1/s | ETA=0.2 min
+[6,000/10,000] 60.0% | batch candidates=708,996 | total candidates=8,285,382 | rate=380 S1/s | ETA=0.2 min
+[6,500/10,000] 65.0% | batch candidates=706,023 | total candidates=8,991,405 | rate=380 S1/s | ETA=0.2 min
+[7,000/10,000] 70.0% | batch candidates=673,279 | total candidates=9,664,684 | rate=381 S1/s | ETA=0.1 min
+[7,500/10,000] 75.0% | batch candidates=703,422 | total candidates=10,368,106 | rate=380 S1/s | ETA=0.1 min
+[8,000/10,000] 80.0% | batch candidates=726,343 | total candidates=11,094,449 | rate=379 S1/s | ETA=0.1 min
+[8,500/10,000] 85.0% | batch candidates=698,316 | total candidates=11,792,765 | rate=379 S1/s | ETA=0.1 min
+[9,000/10,000] 90.0% | batch candidates=678,536 | total candidates=12,471,301 | rate=379 S1/s | ETA=0.0 min
+[9,500/10,000] 95.0% | batch candidates=701,680 | total candidates=13,172,981 | rate=379 S1/s | ETA=0.0 min
+[10,000/10,000] 100.0% | batch candidates=707,488 | total candidates=13,880,469 | rate=379 S1/s | ETA=0.0 min
+
+RESULT
+--------------------------------------------------
+strategy                           : char_name
+s1_entities                        : 10000
+true_matches                       : 34768
+true_matches_found                 : 4617
+candidate_recall                   : 0.132795
+total_candidates                   : 13880469
+mean_candidates_per_s1             : 1388.046900
+median_candidates_per_s1           : 1375.000000
+p95_candidates_per_s1              : 2439.000000
+p99_candidates_per_s1              : 2917.010000
+max_candidates_per_s1              : 4001
+zero_candidate_s1                  : 1
+zero_candidate_rate                : 0.000100
+runtime_seconds                    : 26.400109
+
+======================================================================
+STRATEGY: combined
+======================================================================
+[500/10,000] 5.0% | batch candidates=1,133,229 | total candidates=1,133,229 | rate=262 S1/s | ETA=0.6 min
+[1,000/10,000] 10.0% | batch candidates=1,145,673 | total candidates=2,278,902 | rate=258 S1/s | ETA=0.6 min
+[1,500/10,000] 15.0% | batch candidates=1,144,990 | total candidates=3,423,892 | rate=257 S1/s | ETA=0.6 min
+[2,000/10,000] 20.0% | batch candidates=1,126,419 | total candidates=4,550,311 | rate=258 S1/s | ETA=0.5 min
+[2,500/10,000] 25.0% | batch candidates=1,153,243 | total candidates=5,703,554 | rate=257 S1/s | ETA=0.5 min
+[3,000/10,000] 30.0% | batch candidates=1,140,369 | total candidates=6,843,923 | rate=257 S1/s | ETA=0.5 min
+[3,500/10,000] 35.0% | batch candidates=1,128,385 | total candidates=7,972,308 | rate=257 S1/s | ETA=0.4 min
+[4,000/10,000] 40.0% | batch candidates=1,120,846 | total candidates=9,093,154 | rate=257 S1/s | ETA=0.4 min
+[4,500/10,000] 45.0% | batch candidates=1,127,747 | total candidates=10,220,901 | rate=258 S1/s | ETA=0.4 min
+[5,000/10,000] 50.0% | batch candidates=1,146,353 | total candidates=11,367,254 | rate=257 S1/s | ETA=0.3 min
+[5,500/10,000] 55.0% | batch candidates=1,126,243 | total candidates=12,493,497 | rate=257 S1/s | ETA=0.3 min
+[6,000/10,000] 60.0% | batch candidates=1,142,151 | total candidates=13,635,648 | rate=257 S1/s | ETA=0.3 min
+[6,500/10,000] 65.0% | batch candidates=1,132,178 | total candidates=14,767,826 | rate=257 S1/s | ETA=0.2 min
+[7,000/10,000] 70.0% | batch candidates=1,106,396 | total candidates=15,874,222 | rate=257 S1/s | ETA=0.2 min
+[7,500/10,000] 75.0% | batch candidates=1,145,727 | total candidates=17,019,949 | rate=257 S1/s | ETA=0.2 min
+[8,000/10,000] 80.0% | batch candidates=1,188,336 | total candidates=18,208,285 | rate=256 S1/s | ETA=0.1 min
+[8,500/10,000] 85.0% | batch candidates=1,137,431 | total candidates=19,345,716 | rate=256 S1/s | ETA=0.1 min
+[9,000/10,000] 90.0% | batch candidates=1,138,209 | total candidates=20,483,925 | rate=256 S1/s | ETA=0.1 min
+[9,500/10,000] 95.0% | batch candidates=1,143,965 | total candidates=21,627,890 | rate=256 S1/s | ETA=0.0 min
+[10,000/10,000] 100.0% | batch candidates=1,163,877 | total candidates=22,791,767 | rate=256 S1/s | ETA=0.0 min
+
+RESULT
+--------------------------------------------------
+strategy                           : combined
+s1_entities                        : 10000
+true_matches                       : 34768
+true_matches_found                 : 21498
+candidate_recall                   : 0.618327
+total_candidates                   : 22791767
+mean_candidates_per_s1             : 2279.176700
+median_candidates_per_s1           : 2257.000000
+p95_candidates_per_s1              : 3511.000000
+p99_candidates_per_s1              : 4174.010000
+max_candidates_per_s1              : 5740
+zero_candidate_s1                  : 0
+zero_candidate_rate                : 0.000000
+runtime_seconds                    : 39.000262
+
+======================================================================
+E002 COMPLETE
+======================================================================
+
+Summary written to:
+E:\Amazon_ML_Challenge\experiments\E002\E002_strategy_comparison.csv
+
+Strategy comparison:
+       strategy  candidate_recall  mean_candidates_per_s1  median_candidates_per_s1  p95_candidates_per_s1  p99_candidates_per_s1  max_candidates_per_s1  total_candidates
+       combined          0.618327               2279.1767                    2257.0                 3511.0                4174.01                   5740          22791767
+     token_name          0.475293               1481.1249                    1497.0                 2199.0                2502.04                   3599          14811249
+name_or_address          0.282185                 10.3658                       2.0                   64.0                 176.01                    458            103658
+     exact_name          0.214162                 10.0633                       1.0                   64.0                 175.01                    458            100633
+      char_name          0.132795               1388.0469                    1375.0                 2439.0                2917.01                   4001          13880469
+  exact_address          0.080620                  0.3463                       0.0                    2.0                   3.00                     14              3463

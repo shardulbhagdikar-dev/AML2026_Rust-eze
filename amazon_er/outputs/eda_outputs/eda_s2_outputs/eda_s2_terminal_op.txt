@@ -1,0 +1,247 @@
+======================================================================
+LOADING DATA
+======================================================================
+Loaded: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\dataset\train\train_source2.tsv
+Rows: 5,034,616
+
+======================================================================
+1-2. DATASET STRUCTURE
+======================================================================
+Row count    : 5,034,616
+Column count : 4
+Columns      : ['entity_id', 'business_name', 'business_address', 'country']
+
+Data types:
+entity_id           object
+business_name       object
+business_address    object
+country             object
+dtype: object
+
+======================================================================
+3-7. ID AND MISSING VALUE ANALYSIS
+======================================================================
+Duplicate entity IDs       : 0
+Unique duplicated ID values : 0
+Missing entity IDs          : 0
+Missing business_name    : 2 (0.0000%)
+Missing business_address : 168,967 (3.3561%)
+Missing country          : 0 (0.0000%)
+
+======================================================================
+8. COUNTRY DISTRIBUTION
+======================================================================
+           count  percentage
+country                     
+US       3016817   59.921492
+India    2017799   40.078508
+
+======================================================================
+9-13. BUSINESS NAME ANALYSIS
+======================================================================
+Unique names                         : 4,402,008
+Duplicated name values               : 239,778
+Records belonging to duplicate names : 872,384
+Maximum frequency of one name        : 320
+
+Name statistics:
+non_empty_count                    : 5034614
+length_min                         : 2
+length_max                         : 104
+length_mean                        : 25.10358410793757
+length_median                      : 25.0
+length_std                         : 8.894682163373131
+length_p25                         : 19.0
+length_p75                         : 31.0
+length_p90                         : 37.0
+length_p95                         : 40.0
+length_p99                         : 48.0
+token_min                          : 1
+token_max                          : 15
+token_mean                         : 3.496624567444495
+token_median                       : 4.0
+token_std                          : 1.2403210572989338
+token_p25                          : 3.0
+token_p75                          : 4.0
+token_p90                          : 5.0
+token_p95                          : 5.0
+token_p99                          : 6.0
+total_digit_characters             : 655446
+total_punctuation_characters       : 3044994
+total_non_ascii_characters         : 13261711
+records_with_digits                : 255636
+records_with_punctuation           : 1699628
+records_with_non_ascii             : 764608
+
+----------------------------------------------------------------------
+NAME CHARACTER COMPOSITION
+----------------------------------------------------------------------
+Names containing digits        : 255,636 (5.08%)
+Names containing punctuation   : 1,699,628 (33.76%)
+Names containing non-ASCII     : 764,608 (15.19%)
+Names containing '&'           : 209,076
+Names containing '/'           : 36,671
+Names containing '-'           : 265,653
+Names containing '.'           : 607,929
+
+======================================================================
+14-18. BUSINESS ADDRESS ANALYSIS
+======================================================================
+Unique addresses                     : 4,337,261
+Duplicated address values             : 421,472
+Records belonging to duplicate addrs : 949,860
+Maximum frequency of one address     : 18
+
+Address statistics:
+non_empty_count                    : 4865649
+length_min                         : 8
+length_max                         : 249
+length_mean                        : 47.831172984323366
+length_median                      : 37.0
+length_std                         : 23.704662908690374
+length_p25                         : 31.0
+length_p75                         : 63.0
+length_p90                         : 84.0
+length_p95                         : 97.0
+length_p99                         : 118.0
+token_min                          : 2
+token_max                          : 46
+token_mean                         : 7.538122869117768
+token_median                       : 6.0
+token_std                          : 3.3667020062169337
+token_p25                          : 5.0
+token_p75                          : 9.0
+token_p90                          : 13.0
+token_p95                          : 15.0
+token_p99                          : 18.0
+total_digit_characters             : 19552039
+total_punctuation_characters       : 18339970
+total_non_ascii_characters         : 3923486
+records_with_digits                : 4563675
+records_with_punctuation           : 4865649
+records_with_non_ascii             : 478453
+
+----------------------------------------------------------------------
+ADDRESS CHARACTER COMPOSITION
+----------------------------------------------------------------------
+Addresses containing digits      : 4,563,675 (93.79%)
+Addresses containing punctuation : 4,865,649 (100.00%)
+Addresses containing non-ASCII   : 478,453 (9.83%)
+
+======================================================================
+19. NORMALIZED NAME ANALYSIS
+======================================================================
+Creating normalized names...
+Unique normalized names               : 4,034,923
+Duplicated normalized name values     : 391,969
+Records in duplicate normalized names: 1,391,660
+Maximum normalized-name frequency     : 525
+
+Normalized name statistics:
+non_empty_count                    : 5034614
+length_min                         : 1
+length_max                         : 102
+length_mean                        : 24.50744227859375
+length_median                      : 24.0
+length_std                         : 8.797310882934205
+length_p25                         : 18.0
+length_p75                         : 30.0
+length_p90                         : 36.0
+length_p95                         : 40.0
+length_p99                         : 47.0
+token_min                          : 1
+token_max                          : 18
+token_mean                         : 3.6154118270040168
+token_median                       : 4.0
+token_std                          : 1.2342750378380234
+token_p25                          : 3.0
+token_p75                          : 4.0
+token_p90                          : 5.0
+token_p95                          : 6.0
+token_p99                          : 7.0
+total_digit_characters             : 655446
+total_punctuation_characters       : 0
+total_non_ascii_characters         : 13261711
+records_with_digits                : 255636
+records_with_punctuation           : 0
+records_with_non_ascii             : 764608
+
+======================================================================
+20. NORMALIZED ADDRESS ANALYSIS
+======================================================================
+Creating normalized addresses...
+Unique normalized addresses               : 4,286,090
+Duplicated normalized address values     : 457,281
+Records in duplicate normalized addresses: 1,036,840
+Maximum normalized-address frequency     : 19
+
+Normalized address statistics:
+non_empty_count                    : 4865649
+length_min                         : 7
+length_max                         : 231
+length_mean                        : 44.567613898988604
+length_median                      : 35.0
+length_std                         : 22.181244817373628
+length_p25                         : 29.0
+length_p75                         : 58.0
+length_p90                         : 79.0
+length_p95                         : 90.0
+length_p99                         : 110.0
+token_min                          : 2
+token_max                          : 46
+token_mean                         : 8.065976399037416
+token_median                       : 6.0
+token_std                          : 3.882653223192987
+token_p25                          : 5.0
+token_p75                          : 10.0
+token_p90                          : 14.0
+token_p95                          : 16.0
+token_p99                          : 20.0
+total_digit_characters             : 19552119
+total_punctuation_characters       : 0
+total_non_ascii_characters         : 3923446
+records_with_digits                : 4563675
+records_with_punctuation           : 0
+records_with_non_ascii             : 478453
+
+======================================================================
+NORMALIZATION IMPACT
+======================================================================
+Name unique values:
+  Raw        : 4,402,008
+  Normalized : 4,034,923
+  Reduction  : 367,085
+
+Address unique values:
+  Raw        : 4,337,261
+  Normalized : 4,286,090
+  Reduction  : 51,171
+
+======================================================================
+SAVING DUPLICATE VALUE REPORTS
+======================================================================
+Saved reports to: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\eda_outputs/
+
+======================================================================
+SOURCE 2 EDA COMPLETE
+======================================================================
+Rows                         : 5,034,616
+Columns                      : 6
+Missing IDs                  : 0
+Missing names                : 2
+Missing addresses            : 168,967
+Missing countries            : 0
+Unique raw names             : 4,402,008
+Unique normalized names      : 4,034,923
+Unique raw addresses         : 4,337,261
+Unique normalized addresses  : 4,286,090
+
+Output files:
+  E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\eda_outputs/missing_summary.csv
+  E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\eda_outputs/country_distribution.csv
+  E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\eda_outputs/top_duplicate_names.csv
+  E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\eda_outputs/top_duplicate_normalized_names.csv
+  E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\eda_outputs/top_duplicate_addresses.csv
+  E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\eda_outputs/top_duplicate_normalized_addresses.csv
+
+Done.

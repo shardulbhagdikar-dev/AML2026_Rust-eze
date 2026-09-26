@@ -1,0 +1,179 @@
+======================================================================
+LOADING GROUND TRUTH
+======================================================================
+Rows: 2,206,821
+
+======================================================================
+EXPANDING GROUND TRUTH INTO TRUE PAIRS
+======================================================================
+True pairs: 7,638,365
+
+matched_source
+S3    3944746
+S2    3693619
+
+======================================================================
+LOADING SOURCE 1
+======================================================================
+Rows: 2,206,821
+
+======================================================================
+LOADING SOURCE 2
+======================================================================
+Rows: 5,034,616
+
+======================================================================
+LOADING SOURCE 3
+======================================================================
+Rows: 5,285,603
+
+======================================================================
+CREATING ENTITY LOOKUPS
+======================================================================
+S1 lookup: 2,206,821
+S2 lookup: 5,034,616
+S3 lookup: 5,285,603
+
+======================================================================
+CALCULATING TRUE-PAIR FEATURES
+======================================================================
+Processed 500,000 / 7,638,365 pairs
+Processed 1,000,000 / 7,638,365 pairs
+Processed 1,500,000 / 7,638,365 pairs
+Processed 2,000,000 / 7,638,365 pairs
+Processed 2,500,000 / 7,638,365 pairs
+Processed 3,000,000 / 7,638,365 pairs
+Processed 3,500,000 / 7,638,365 pairs
+Processed 4,000,000 / 7,638,365 pairs
+Processed 4,500,000 / 7,638,365 pairs
+Processed 5,000,000 / 7,638,365 pairs
+Processed 5,500,000 / 7,638,365 pairs
+Processed 6,000,000 / 7,638,365 pairs
+Processed 6,500,000 / 7,638,365 pairs
+Processed 7,000,000 / 7,638,365 pairs
+Processed 7,500,000 / 7,638,365 pairs
+
+Generated feature rows : 7,638,365
+Missing S1 records     : 0
+Missing target records: 0
+
+======================================================================
+SAVING TRUE-PAIR FEATURE DATASET
+======================================================================
+Saved: E:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\E001_outputs\true_pair_features.csv
+
+======================================================================
+BLOCKING SIGNAL COVERAGE
+======================================================================
+                    rule  true_pairs_retrieved  total_true_pairs  pair_recall_percent
+          raw_name_exact                354118           7638365             4.636044
+   normalized_name_exact               1655708           7638365            21.676210
+       raw_address_exact                170074           7638365             2.226576
+normalized_address_exact                631362           7638365             8.265669
+           country_exact               7638365           7638365           100.000000
+      name_country_exact               1655708           7638365            21.676210
+   address_country_exact                631362           7638365             8.265669
+      name_address_exact                 99169           7638365             1.298301
+   name_or_address_exact               2187901           7638365            28.643578
+
+======================================================================
+SOURCE-SPECIFIC COVERAGE
+======================================================================
+source                     rule  true_pairs  retrieved  recall_percent
+    S2           raw_name_exact     3693619     174617        4.727531
+    S2    normalized_name_exact     3693619     785716       21.272254
+    S2        raw_address_exact     3693619          5        0.000135
+    S2 normalized_address_exact     3693619     460921       12.478845
+    S2            country_exact     3693619    3693619      100.000000
+    S2       name_country_exact     3693619     785716       21.272254
+    S2    address_country_exact     3693619     460921       12.478845
+    S2       name_address_exact     3693619      98958        2.679161
+    S2    name_or_address_exact     3693619    1147679       31.071938
+    S3           raw_name_exact     3944746     179501        4.550382
+    S3    normalized_name_exact     3944746     869992       22.054449
+    S3        raw_address_exact     3944746     170069        4.311279
+    S3 normalized_address_exact     3944746     170441        4.320709
+    S3            country_exact     3944746    3944746      100.000000
+    S3       name_country_exact     3944746     869992       22.054449
+    S3    address_country_exact     3944746     170441        4.320709
+    S3       name_address_exact     3944746        211        0.005349
+    S3    name_or_address_exact     3944746    1040222       26.369809
+
+======================================================================
+EXACT NAME / ADDRESS RULE OVERLAP
+======================================================================
+        category  true_pair_count  percentage
+Name AND Address            99169    1.298301
+       Name only          1556539   20.377908
+    Address only           532193    6.967368
+         Neither          5450464   71.356422
+
+======================================================================
+DIFFICULT TRUE PAIRS
+======================================================================
+True pairs missed by both exact normalized name and exact normalized address:
+5,450,464 (71.36%)
+
+======================================================================
+MISSING ADDRESS TRUE-PAIR ANALYSIS
+======================================================================
+Both addresses missing : 0
+Either address missing : 337,018
+Neither missing        : 7,301,347
+
+======================================================================
+SIMILARITY DISTRIBUTIONS
+======================================================================
+              feature  min      p01      p05      p10      p25   median      p75      p90  p95  p99  max     mean
+   name_token_jaccard  0.0 0.000000 0.000000 0.000000 0.500000 0.666667 1.000000 1.000000  1.0  1.0  1.0 0.615482
+address_token_jaccard  0.0 0.000000 0.117647 0.250000 0.428571 0.636364 0.800000 1.000000  1.0  1.0  1.0 0.604993
+    name_char_jaccard  0.0 0.000000 0.000000 0.200000 0.484848 0.703704 0.866667 1.000000  1.0  1.0  1.0 0.651161
+ address_char_jaccard  0.0 0.000000 0.125000 0.283582 0.508197 0.676471 0.818182 0.947368  1.0  1.0  1.0 0.640268
+     name_levenshtein  0.0 0.054054 0.086957 0.285714 0.566667 0.789474 0.954545 1.000000  1.0  1.0  1.0 0.717647
+  address_levenshtein  0.0 0.000000 0.108108 0.205128 0.452381 0.710145 0.854839 0.960000  1.0  1.0  1.0 0.638259
+
+======================================================================
+LOW-SIMILARITY TRUE PAIRS
+======================================================================
+
+Lowest name similarity examples:
+source1_entity_id matched_entity_id matched_source                    s1_business_name                        matched_business_name  name_char_jaccard  name_levenshtein
+     S1-747863765       S3-50752311             S3                        Sovous Parts                                     Kelonovi                0.0          0.083333
+     S1-170466883      S2-887329236             S2           Ace Media Private Limited                 ఏస్ మీడియా ప్రైవేట్ లిమిటెడ్                0.0          0.107143
+     S1-656753428       S2-24659151             S2             Ss Food Private Limited                    एसएस फूड प्राइवेट लिमिटेड                0.0          0.080000
+     S1-225699309      S2-112952800             S2      Dynamic Estate Private Limited             डायनामिक एस्टेट प्राइवेट लिमिटेड                0.0          0.093750
+     S1-593830742      S3-207597328             S3 Swastik Consultants Private Limited        स्वस्तिक कंसल्टेंट्स प्राइवेट लिमिटेड                0.0          0.081081
+     S1-593830742      S2-225208703             S2 Swastik Consultants Private Limited        स्वस्तिक कंसल्टेंट्स प्राइवेट लिमिटेड                0.0          0.081081
+     S1-789009573      S2-383871912             S2           Hotel Enterprises Limited                    होटल एंटरप्राइजेज लिमिटेड                0.0          0.040000
+     S1-318373630      S2-660036492             S2        Red Ventures Private Limited                 रेड वेंचर्स प्राइवेट लिमिटेड                0.0          0.071429
+     S1-269610470       S3-49080648             S3    Super Premier Properties Pvt Ltd সুপার প্রিমিয়ার প্রপার্টিজ প্রাইভেট লিমিটেড                0.0          0.090909
+     S1-269610470      S2-342814985             S2    Super Premier Properties Pvt Ltd সুপার প্রিমিয়ার প্রপার্টিজ প্রাইভেট লিমিটেড                0.0          0.090909
+     S1-269610470      S2-884494017             S2    Super Premier Properties Pvt Ltd সুপার প্রিমিয়ার প্রপার্টিজ প্রাইভেট লিমিটেড                0.0          0.090909
+     S1-863031412      S2-518155942             S2        North Energy Private Limited                नॉर्थ एनर्जी प्राइवेट लिमिटेड                0.0          0.103448
+     S1-863031412      S2-631615245             S2        North Energy Private Limited                नॉर्थ एनर्जी प्राइवेट लिमिटेड                0.0          0.103448
+     S1-863031412      S3-846786490             S3        North Energy Private Limited                नॉर्थ एनर्जी प्राइवेट लिमिटेड                0.0          0.103448
+     S1-863031412      S3-166521737             S3        North Energy Private Limited                नॉर्थ एनर्जी प्राइवेट लिमिटेड                0.0          0.103448
+     S1-678553887      S3-867278101             S3         Raj Trading Private Limited                राज ट्रेडिंग प्राइवेट लिमिटेड                0.0          0.103448
+      S1-72444401      S2-503949813             S2                       New Solutions                               न्यू सॉल्यूशंस                0.0          0.071429
+      S1-72444401      S2-973800896             S2                       New Solutions                               न्यू सॉल्यूशंस                0.0          0.071429
+     S1-473377609      S3-433876173             S3                 Wave & Brothers Ltd                                  Belobrixlum                0.0          0.235294
+     S1-544963976      S3-948681366             S3       Apex Software Private Limited        অ্যাপেক্স সফটওয়্যার প্রাইভেট লিমিটেড                0.0          0.081081
+
+======================================================================
+TRUE-PAIR ANALYSIS COMPLETE
+======================================================================
+True pairs analyzed : 7,638,365
+S2 pairs           : 3,693,619
+S3 pairs           : 3,944,746
+Difficult pairs     : 5,450,464
+
+Output files:
+  blocking_signal_coverage.csv
+  difficult_true_pairs_sample.csv
+  lowest_address_similarity_pairs.csv
+  lowest_name_similarity_pairs.csv
+  missing_address_true_pairs.csv
+  name_address_overlap.csv
+  similarity_statistics.csv
+  source_specific_coverage.csv
+  true_pair_features.csv

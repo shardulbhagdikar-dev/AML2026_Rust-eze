@@ -1,0 +1,17 @@
+metric,count,fraction_of_true_pairs
+total_true_pairs,7638365,1.0
+S2_true_pairs,3693619,0.4835614689792907
+S3_true_pairs,3944746,0.5164385310207092
+name_same_script,7086515,0.9277528633418277
+name_script_overlap,40348,0.005282282268522125
+name_cross_script,511502,0.06696485438965014
+name_missing,0,0.0
+address_same_script,6609779,0.8653395065567042
+address_script_overlap,691495,0.0905291904746631
+address_cross_script,337091,0.044131302968632685
+address_missing,0,0.0
+pairs_with_non_ascii_name,1060780,0.13887526977304698
+pairs_with_non_ascii_address,693164,0.0907476927326725
+both_name_and_address_cross_script,13,1.7019349036082984e-06
+name_cross_script_only,511489,0.06696315245474653
+address_cross_script_only,337078,0.04412960103372908

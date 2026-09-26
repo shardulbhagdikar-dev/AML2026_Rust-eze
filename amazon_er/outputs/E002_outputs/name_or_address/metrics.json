@@ -1,0 +1,16 @@
+{
+  "strategy": "name_or_address",
+  "s1_entities": 10000,
+  "true_matches": 34768,
+  "true_matches_found": 9811,
+  "candidate_recall": 0.282184767602393,
+  "total_candidates": 103658,
+  "mean_candidates_per_s1": 10.3658,
+  "median_candidates_per_s1": 2.0,
+  "p95_candidates_per_s1": 64.0,
+  "p99_candidates_per_s1": 176.01000000000022,
+  "max_candidates_per_s1": 458,
+  "zero_candidate_s1": 2352,
+  "zero_candidate_rate": 0.2352,
+  "runtime_seconds": 0.2431626319885254
+}

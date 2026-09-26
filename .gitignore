@@ -1,0 +1,26 @@
+# Datasets and raw data
+dataset/
+data/
+*.tsv
+
+# Large model artifacts and raw output files
+true_pair_features.csv
+true_pair_script_analysis.csv
+matched_entity_frequency.csv
+s1_ground_truth_analysis.csv
+candidate_pairs.tsv
+
+# Python and Jupyter artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Environment and system files
+.DS_Store
+.DS_Store?
+._*
+.env
+venv/
+.venv/

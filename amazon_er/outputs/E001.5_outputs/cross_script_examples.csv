@@ -1,0 +1,214 @@
+s1_id,target_id,target_source,s1_name,target_name,s1_name_script,target_name_script,s1_address_script,target_address_script,name_relationship,address_relationship
+S1-965667,S2-681193310,S2,Maure Williams Colombier Inc,Maure Wilblims Colombier Inc,Latin,Latin,Latin,Empty,same,cross_script
+S1-965667,S2-743505751,S2,Maure Williams Colombier Inc,Maure Williams Colombier,Latin,Latin,Latin,Empty,same,cross_script
+S1-965667,S3-860443364,S3,Maure Williams Colombier Inc,Maure Williams Inc Center,Latin,Latin,Latin,Empty,same,cross_script
+S1-55344266,S2-249013014,S2,Raj Investments LLP,ராஜ் இன்வெஸ்ட்மெண்ட்ஸ் எல்எல்பி,Latin,Tamil,Latin,Latin,cross_script,same
+S1-55344266,S3-384364074,S3,Raj Investments LLP,ராஜ் இன்வெஸ்ட்மெண்ட்ஸ் எல்எல்பி,Latin,Tamil,Latin,Latin+Tamil,cross_script,overlap
+S1-656753428,S2-153058913,S2,Ss Food Private Limited,एसएस फूड प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Devanagari+Latin,cross_script,overlap
+S1-656753428,S2-24659151,S2,Ss Food Private Limited,एसएस फूड प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-656753428,S3-679606215,S3,Ss Food Private Limited,एसएस फूड प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-318373630,S2-660036492,S2,Red Ventures Private Limited,रेड वेंचर्स प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-29845983,S3-588502663,S3,Hendricks and Flowers Inc,Hendricks and Inc Flowers,Latin,Latin,Latin,Empty,same,cross_script
+S1-789009573,S2-383871912,S2,Hotel Enterprises Limited,होटल एंटरप्राइजेज लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-730934468,S2-356983532,S2,Orellana Investments LLC,Orellana Investments Investments Llc,Latin,Latin,Latin,Empty,same,cross_script
+S1-274126313,S2-680265918,S2,"Obsidian, LLC","obsidian, llc",Latin,Latin,Latin,Empty,same,cross_script
+S1-274126313,S3-461175723,S3,"Obsidian, LLC","Obsidian, [[LLC]]",Latin,Latin,Latin,Empty,same,cross_script
+S1-145361722,S2-120366543,S2,Dick Regional Armada Corp,Dick Regional,Latin,Latin,Latin,Empty,same,cross_script
+S1-561341312,S2-483615364,S2,Balaji Investment Private Limited,బాలాజీ ఇన్వెస్ట్‌మెంట్ ప్రైవేట్ లిమిటెడ్,Latin,Telugu,Latin,Latin,cross_script,same
+S1-727602285,S2-976870196,S2,Swastik Om Solutions LLP,स्वस्तिक ॐ सॉल्यूशंस एलएलपी,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-727602285,S2-947230367,S2,Swastik Om Solutions LLP,स्वस्तिक ॐ सॉल्यूशंस एलएलपी,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-65263544,S2-998270769,S2,Caldeon Nova,CALDEON NOVA LLC,Latin,Latin,Latin,Empty,same,cross_script
+S1-840162906,S2-129529678,S2,Summit Health LLC,Summit Health Enterprises,Latin,Latin,Latin,Empty,same,cross_script
+S1-9962387,S2-15221089,S2,Systel Buildstructure (India) Private Limited,Systel Buildstructure (India),Latin,Latin,Latin,Empty,same,cross_script
+S1-116043204,S3-85523430,S3,Red Consultants Pvt. Ltd.,Red Pvt. Ltd. Center,Latin,Latin,Latin,Empty,same,cross_script
+S1-876102895,S2-791711694,S2,Physical Therapy Clinic,Physical [Clinic] Therapy,Latin,Latin,Latin,Empty,same,cross_script
+S1-72444401,S2-973800896,S2,New Solutions,न्यू सॉल्यूशंस,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-72444401,S2-503949813,S2,New Solutions,न्यू सॉल्यूशंस,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-72444401,S3-505153321,S3,New Solutions,न्यू सॉल्यूशंस,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-67172650,S3-251407198,S3,Apar Engineering (India) Private Limited,M/s Apar Engineering (India),Latin,Latin,Latin,Empty,same,cross_script
+S1-131928575,S3-504772212,S3,Jeanlouis Advantage LLC,Jeanlouis Advantage Llc,Latin,Latin,Latin,Empty,same,cross_script
+S1-152222475,S2-449137844,S2,Ram Maa Logistics Private Limited,राम मां लॉजिस्टिक्स प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-170252930,S2-233855016,S2,Keystone Tri-State Ethereum LLC,Keystone  Tri-State Ethereum L.L.C.,Latin,Latin,Latin,Empty,same,cross_script
+S1-652339606,S2-731383297,S2,Libra Service Limited,Sri LIBRA  SERVICE LIMITED,Latin,Latin,Latin,Empty,same,cross_script
+S1-652339606,S3-946979261,S3,Libra Service Limited,Libra Service  Limited,Latin,Latin,Latin,Empty,same,cross_script
+S1-816256578,S2-58277947,S2,Sun Software Limited,सन सॉफ्टवेयर लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-502736054,S3-537652714,S3,First Seven Exports Pvt Ltd,फर्स्ट सेवन एक्सपोर्ट्स प्रा. लि.,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-649259801,S2-654066445,S2,Guru Solutions Pvt Ltd,ಗುರು ಸೊಲ್ಯೂಷನ್ಸ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್,Latin,Kannada,Latin,Latin,cross_script,same
+S1-927655670,S2-226884833,S2,Jain Marketing Private Limited,जैन मार्केटिंग प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-541270202,S3-425705194,S3,"Sofie Greenman, O.D.","Sofie Greenman,-O.D.",Latin,Latin,Latin,Empty,same,cross_script
+S1-292900819,S2-791548670,S2,Services Tycon Connect Partners,SERVICES TÉTONC CONNECT PARTNERS,Latin,Latin,Latin,Empty,same,cross_script
+S1-945578383,S2-914824440,S2,Eye Physicians of Elmhurst,Eye Physicians of Services,Latin,Latin,Latin,Empty,same,cross_script
+S1-652218682,S2-892578739,S2,13/85 Ameren Inc,13/85 AMEREN INC,Latin,Latin,Latin,Empty,same,cross_script
+S1-652218682,S3-936092443,S3,13/85 Ameren Inc,13/85  Ameren Inc,Latin,Latin,Latin,Empty,same,cross_script
+S1-929320417,S2-479796481,S2,SQ Concord LLC,SQ CONCORD L.L.C.,Latin,Latin,Latin,Empty,same,cross_script
+S1-83647344,S3-175231511,S3,New India Private Limited,New Private Limited 5ervices,Latin,Latin,Latin,Empty,same,cross_script
+S1-254440362,S3-734943831,S3,"West Surgical, Inc.","West 5udilc, Inc.",Latin,Latin,Latin,Empty,same,cross_script
+S1-953694901,S3-860481692,S3,St. Lutheran Church LLC,St. Lutheran Church L.L.C.,Latin,Latin,Latin,Empty,same,cross_script
+S1-793447671,S3-388747679,S3,Integrated Unified Auto Repair LLC,Integrated Unified Auto LLC Service,Latin,Latin,Latin,Empty,same,cross_script
+S1-369720553,S2-309368741,S2,Station Global Co,Station Gdeonal Co,Latin,Latin,Latin,Empty,same,cross_script
+S1-216137765,S2-190915441,S2,Gold Projects Pvt Ltd,ಗೋಲ್ಡ್ ಪ್ರಾಜೆಕ್ಟ್ಸ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್,Latin,Kannada,Latin,Latin,cross_script,same
+S1-216137765,S2-680612609,S2,Gold Projects Pvt Ltd,ಗೋಲ್ಡ್ ಪ್ರಾಜೆಕ್ಟ್ಸ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್,Latin,Kannada,Latin,Latin,cross_script,same
+S1-216137765,S2-904465183,S2,Gold Projects Pvt Ltd,ಗೋಲ್ಡ್ ಪ್ರಾಜೆಕ್ಟ್ಸ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್,Latin,Kannada,Latin,Kannada+Latin,cross_script,overlap
+S1-216137765,S3-818304481,S3,Gold Projects Pvt Ltd,ಗೋಲ್ಡ್ ಪ್ರಾಜೆಕ್ಟ್ಸ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್,Latin,Kannada,Latin,Latin,cross_script,same
+S1-9455909,S3-384632970,S3,Seven Sun Producer Private Limited,सेवन सन प्रोड्यूसर प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-9455909,S3-133372803,S3,Seven Sun Producer Private Limited,सेवन सन प्रोड्यूसर प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-796816825,S2-347326271,S2,Red Global Limited,রেড গ্লোবাল লিমিটেড,Latin,Bengali,Latin,Latin,cross_script,same
+S1-796816825,S3-896547694,S3,Red Global Limited,রেড গ্লোবাল লিমিটেড,Latin,Bengali,Latin,Latin,cross_script,same
+S1-922626199,S3-286175400,S3,Sarasiya Consulting Private Limited,The  Sarasiya Consulting Private Limited,Latin,Latin,Latin,Empty,same,cross_script
+S1-862024840,S2-74265858,S2,South Estate Private Limited,साउथ एस्टेट प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-862024840,S3-187313683,S3,South Estate Private Limited,साउथ एस्टेट प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-446697179,S2-922150401,S2,Jain Law Chambers,Jain [Law],Latin,Latin,Latin,Empty,same,cross_script
+S1-894049089,S2-972003483,S2,Swastik Marketing,स्वस्तिक मार्केटिंग,Latin,Devanagari,Latin,Devanagari+Latin,cross_script,overlap
+S1-683515854,S2-756250340,S2,Shiva Exports,शिवा एक्सपोर्ट्स,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-635770223,S2-329661878,S2,TG Ridge Bread LLC,TG Ridge Bread L.L.C.,Latin,Latin,Latin,Empty,same,cross_script
+S1-477776195,S3-723948056,S3,Dynamic Biomedical Networks LLC,Dynamic  Biomedical Networks (LLC),Latin,Latin,Latin,Empty,same,cross_script
+S1-93741603,S3-981096747,S3,Aguilar Diversified LLC,Aguilar Diervsmfeid LLC,Latin,Latin,Latin,Empty,same,cross_script
+S1-472139199,S2-122544659,S2,Melania Garcia Tankers,Melania Garcia Tankers [Corporation],Latin,Latin,Latin,Empty,same,cross_script
+S1-136601270,S2-254817327,S2,Jai Trading Private Limited,ജയ് ട്രേഡിംഗ് പ്രൈവറ്റ് ലിമിറ്റഡ്,Latin,Malayalam,Latin,Latin,cross_script,same
+S1-136601270,S3-449970897,S3,Jai Trading Private Limited,ജയ് ട്രേഡിംഗ് പ്രൈവറ്റ് ലിമിറ്റഡ്,Latin,Malayalam,Latin,Latin,cross_script,same
+S1-549559960,S2-848203707,S2,Hari Urban Ventures Pvt Ltd,హరి అర్బన్ వెంచర్స్ ప్రైవేట్ లిమిటెడ్,Latin,Telugu,Latin,Latin,cross_script,same
+S1-549559960,S3-292200508,S3,Hari Urban Ventures Pvt Ltd,హరి అర్బన్ వెంచర్స్ ప్రైవేట్ లిమిటెడ్,Latin,Telugu,Latin,Latin,cross_script,same
+S1-549559960,S3-231650119,S3,Hari Urban Ventures Pvt Ltd,హరి అర్బన్ వెంచర్స్ ప్రైవేట్ లిమిటెడ్,Latin,Telugu,Latin,Latin,cross_script,same
+S1-237739500,S3-679029492,S3,Perfect Exports Pvt Ltd,परफेक्ट एक्सपोर्ट्स प्रा. लि.,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-304029686,S2-948269515,S2,"Whipple & Williams Acquisition, LLC",Whipple &  Williams,Latin,Latin,Latin,Empty,same,cross_script
+S1-745867296,S2-43113841,S2,Historical Foundation,Historical Foundation Enterprises,Latin,Latin,Latin,Empty,same,cross_script
+S1-557991692,S2-88682972,S2,Vinay Tele,Vinay Toetle,Latin,Latin,Latin,Empty,same,cross_script
+S1-8713989,S3-20459433,S3,Li Sterling Technology LP,Li Sterlnig Technology LP #8180,Latin,Latin,Latin,Empty,same,cross_script
+S1-555242352,S2-810626996,S2,Prime Media Pvt Ltd,प्राइम मीडिया प्रा. लि.,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-555242352,S2-253027494,S2,Prime Media Pvt Ltd,प्राइम मीडिया प्रा. लि.,Latin,Devanagari,Latin,Devanagari+Latin,cross_script,overlap
+S1-609996572,S2-40869239,S2,Future Management Pvt Ltd,फ्यूचर मैनेजमेंट प्रा. लि.,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-609996572,S3-262044007,S3,Future Management Pvt Ltd,फ्यूचर मैनेजमेंट प्रा. लि.,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-609996572,S3-366128148,S3,Future Management Pvt Ltd,फ्यूचर मैनेजमेंट प्रा. लि.,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-236768477,S3-103597021,S3,Srinidhi Developers Private Limited,Srinidhi Developers Private,Latin,Latin,Latin,Empty,same,cross_script
+S1-86469552,S3-479224552,S3,Nelson Sumitomo LLC,Nelson Sumitomo Llc,Latin,Latin,Latin,Empty,same,cross_script
+S1-289512402,S2-547617311,S2,Safe Supply International,Safe Súpply Ínternational,Latin,Latin,Latin,Empty,same,cross_script
+S1-508701481,S2-712560178,S2,Red Energy Pvt Ltd,ରେଡ୍ ଏନର୍ଜି ପ୍ରାଇଭେଟ୍ ଲିମିଟେଡ୍,Latin,Oriya,Latin,Latin,cross_script,same
+S1-994893973,S3-360939675,S3,Exports Ds Homes Private Limited,Exports Ds Homes Private Ltd,Latin,Latin,Latin,Empty,same,cross_script
+S1-679550141,S2-876234727,S2,Vijay Universal Exports Pvt Ltd,ವಿಜಯ್ ಯುನಿವರ್ಸಲ್ ಎಕ್ಸ್‌ಪೋರ್ಟ್ಸ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್,Latin,Kannada,Latin,Latin,cross_script,same
+S1-679550141,S3-937330852,S3,Vijay Universal Exports Pvt Ltd,Vijay Universal Exports  Pvt Ltd,Latin,Latin,Latin,Empty,same,cross_script
+S1-115827165,S3-494929490,S3,Grubb Best Bancshares LLC,Grubb Best,Latin,Latin,Latin,Empty,same,cross_script
+S1-852122558,S2-13742356,S2,Prime Good Healthcare Private Limited,ప్రైమ్ గుడ్ హెల్త్‌కేర్ ప్రైవేట్ లిమిటెడ్,Latin,Telugu,Latin,Latin+Telugu,cross_script,overlap
+S1-852122558,S2-836861185,S2,Prime Good Healthcare Private Limited,ప్రైమ్ గుడ్ హెల్త్‌కేర్ ప్రైవేట్ లిమిటెడ్,Latin,Telugu,Latin,Latin,cross_script,same
+S1-852122558,S3-541486453,S3,Prime Good Healthcare Private Limited,ప్రైమ్ గుడ్ హెల్త్‌కేర్ ప్రైవేట్ లిమిటెడ్,Latin,Telugu,Latin,Latin,cross_script,same
+S1-654078241,S2-27298391,S2,Southern Estate,सदर्न एस्टेट,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-657325262,S2-463332740,S2,Miller & Perry P.C.,MILLER & P.C.-PERRY,Latin,Latin,Latin,Empty,same,cross_script
+S1-331538406,S2-796474854,S2,Southern Properties Private Limited,सदर्न प्रॉपर्टीज प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-331538406,S3-132376439,S3,Southern Properties Private Limited,सदर्न प्रॉपर्टीज प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Devanagari+Latin,cross_script,overlap
+S1-543874807,S3-34254854,S3,"Pam W. Mayeda, O.D., DDS PC","Pam W. Mayeda, O.D., DDS Inc",Latin,Latin,Latin,Empty,same,cross_script
+S1-144239108,S3-343516741,S3,Mumbai Marketing Private Limited,Mumbai Marketing Private Ltd,Latin,Latin,Latin,Empty,same,cross_script
+S1-936762728,S2-261521011,S2,Jai Construction Pvt Ltd,जय कंस्ट्रक्शन प्रा. लि.,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-936762728,S3-753767840,S3,Jai Construction Pvt Ltd,जय कंस्ट्रक्शन प्रा. लि.,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-612170454,S2-561548830,S2,Laxmi Logistics Limited,लक्ष्मी लॉजिस्टिक्स लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-612170454,S3-222750920,S3,Laxmi Logistics Limited,लक्ष्मी लॉजिस्टिक्स लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-612170454,S3-491355510,S3,Laxmi Logistics Limited,लक्ष्मी लॉजिस्टिक्स लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-635996806,S2-756480026,S2,Global Consultants Private Limited,ग्लोबल कंसल्टेंट्स प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Devanagari+Latin,cross_script,overlap
+S1-266344604,S2-568551176,S2,Dream Construction Private Limited,ড্রিম কনস্ট্রাকশন প্রাইভেট লিমিটেড,Latin,Bengali,Latin,Latin,cross_script,same
+S1-266344604,S2-137828681,S2,Dream Construction Private Limited,ড্রিম কনস্ট্রাকশন প্রাইভেট লিমিটেড,Latin,Bengali,Latin,Latin,cross_script,same
+S1-266344604,S3-498162929,S3,Dream Construction Private Limited,ড্রিম কনস্ট্রাকশন প্রাইভেট লিমিটেড,Latin,Bengali,Latin,Latin,cross_script,same
+S1-266344604,S3-300641912,S3,Dream Construction Private Limited,ড্রিম কনস্ট্রাকশন প্রাইভেট লিমিটেড,Latin,Bengali,Latin,Bengali+Latin,cross_script,overlap
+S1-63990887,S3-798582752,S3,Devendra Carrier Company,Devendra Carrier,Latin,Latin,Latin,Empty,same,cross_script
+S1-521254993,S2-391342801,S2,Life Healthcare Private Limited,लाइफ हेल्थकेयर प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-521254993,S3-96785772,S3,Life Healthcare Private Limited,लाइफ हेल्थकेयर प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-184017157,S2-55250528,S2,Star Enterprises Pvt Ltd,स्टार एंटरप्राइजेज प्रा. लि.,Latin,Devanagari,Latin,Devanagari+Latin,cross_script,overlap
+S1-103101914,S3-464737380,S3,Midwest Trusted Management Inc,Midwest Management lnc Center,Latin,Latin,Latin,Empty,same,cross_script
+S1-739445941,S2-439082067,S2,Silver Investment Private Limited,ಸಿಲ್ವರ್ ಇನ್ವೆಸ್ಟ್‌ಮೆಂಟ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್,Latin,Kannada,Latin,Latin,cross_script,same
+S1-60587840,S2-477249487,S2,Galaxy Anand Technology Private Limited,गैलेक्सी आनंद टेक्नोलॉजी प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-60587840,S3-45263592,S3,Galaxy Anand Technology Private Limited,GALAXY ANAND TECHNOLOGY PRIVATE LIMITED,Latin,Latin,Latin,Empty,same,cross_script
+S1-882344007,S3-549002145,S3,Pettigrew Solutions Inc.,Pettigrew Solutions,Latin,Latin,Latin,Empty,same,cross_script
+S1-22787740,S2-919846730,S2,Shiv Consultancy Limited,शिव कंसल्टेंसी लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-22633084,S2-680658950,S2,Premier Foundation Limited,प्रीमियर फाउंडेशन लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-22633084,S3-912074059,S3,Premier Foundation Limited,प्रीमियर फाउंडेशन लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-583365562,S2-459777891,S2,"Jacky Sawyer, O.D., DDS PC","Jacky Sawyer, O.D., DDS",Latin,Latin,Latin,Empty,same,cross_script
+S1-583365562,S3-984436624,S3,"Jacky Sawyer, O.D., DDS PC","Jacky PC O.D., DDS Sawyer,",Latin,Latin,Latin,Empty,same,cross_script
+S1-100166899,S2-375611616,S2,Green Services Limited,ग्रीन सर्विसेज लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-690375126,S3-467195779,S3,Gulf Society,Gulf Society Co,Latin,Latin,Latin,Empty,same,cross_script
+S1-308262271,S2-696354721,S2,Royal Surya Management,रॉयल सूर्य मैनेजमेंट,Latin,Devanagari,Latin,Devanagari+Latin,cross_script,overlap
+S1-308262271,S2-877910903,S2,Royal Surya Management,रॉयल सूर्य मैनेजमेंट,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-308262271,S3-357540678,S3,Royal Surya Management,रॉयल सूर्या मैनेजमेंट,Latin,Devanagari,Latin,Devanagari+Latin,cross_script,overlap
+S1-740195204,S3-886873951,S3,Grand Starling,Grand  Starling,Latin,Latin,Latin,Empty,same,cross_script
+S1-804036808,S2-887593036,S2,Ram Projects Private Limited,राम प्रोजेक्ट्स प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Devanagari+Latin,cross_script,overlap
+S1-804036808,S3-539278386,S3,Ram Projects Private Limited,राम प्रोजेक्ट्स प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-804036808,S3-997522896,S3,Ram Projects Private Limited,राम प्रोजेक्ट्स प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-708400226,S2-636078522,S2,Trinity Lutheran Church,Trinity Lutheran Church Inc.,Latin,Latin,Latin,Empty,same,cross_script
+S1-546177410,S2-648883949,S2,Zelova LLC,ZELOVA L.L.C.,Latin,Latin,Latin,Empty,same,cross_script
+S1-180353640,S2-333591506,S2,Gold Media Private Limited,ગોલ્ડ મીડિયા પ્રાઇવેટ લિમિટેડ,Latin,Gujarati,Latin,Latin,cross_script,same
+S1-180353640,S3-415461067,S3,Gold Media Private Limited,ગોલ્ડ મીડિયા પ્રાઇવેટ લિમિટેડ,Latin,Gujarati,Latin,Gujarati+Latin,cross_script,overlap
+S1-180353640,S3-375486976,S3,Gold Media Private Limited,ગોલ્ડ મીડિયા પ્રાઇવેટ લિમિટેડ,Latin,Gujarati,Latin,Latin,cross_script,same
+S1-151299429,S3-939400153,S3,Hari Consultancy Limited,Hari Consultancy Ltd,Latin,Latin,Latin,Empty,same,cross_script
+S1-806616139,S2-828873290,S2,Golden Power Pvt Ltd,गोल्डन पावर प्रा. लि.,Latin,Devanagari,Latin,Devanagari+Latin,cross_script,overlap
+S1-883281842,S2-470387998,S2,Style Multi Pvt. Ltd.,M/s STYLE MÚRLT PVT. LTD.,Latin,Latin,Latin,Empty,same,cross_script
+S1-883281842,S2-466747962,S2,Style Multi Pvt. Ltd.,Style Multi Pvt. Ltd,Latin,Latin,Latin,Empty,same,cross_script
+S1-337241318,S3-240807196,S3,Aditesh Foundation Private Limited,Aditesh Foundation Private  Ltd,Latin,Latin,Latin,Empty,same,cross_script
+S1-977682665,S2-816951244,S2,Premier International Private Limited,பிரீமியர் இன்டர்நேஷனல் பிரைவேட் லிமிடெட்,Latin,Tamil,Latin,Latin,cross_script,same
+S1-463038301,S2-852363557,S2,City Consultancy Private Limited,सिटी कंसल्टेंसी प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Devanagari+Latin,cross_script,overlap
+S1-349683786,S2-608223,S2,All Global Private Limited,ऑल ग्लोबल प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Devanagari+Latin,cross_script,overlap
+S1-3118239,S2-384807569,S2,Silver Products Private Limited,ಸಿಲ್ವರ್ ಪ್ರೊಡಕ್ಟ್ಸ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್,Latin,Kannada,Latin,Latin,cross_script,same
+S1-3118239,S2-184568209,S2,Silver Products Private Limited,ಸಿಲ್ವರ್ ಪ್ರೊಡಕ್ಟ್ಸ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್,Latin,Kannada,Latin,Kannada+Latin,cross_script,overlap
+S1-3118239,S3-966155454,S3,Silver Products Private Limited,ಸಿಲ್ವರ್ ಪ್ರೊಡಕ್ಟ್ಸ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್,Latin,Kannada,Latin,Latin,cross_script,same
+S1-3118239,S3-94426820,S3,Silver Products Private Limited,ಸಿಲ್ವರ್ ಪ್ರೊಡಕ್ಟ್ಸ್ ಪ್ರೈವೇಟ್ ಲಿಮಿಟೆಡ್,Latin,Kannada,Latin,Kannada+Latin,cross_script,overlap
+S1-157064113,S2-154047991,S2,Sky Healthcare Private Limited,સ્કાય હેલ્થકેર પ્રાઇવેટ લિમિટેડ,Latin,Gujarati,Latin,Gujarati+Latin,cross_script,overlap
+S1-157064113,S2-515772498,S2,Sky Healthcare Private Limited,સ્કાય હેલ્થકેર પ્રાઇવેટ લિમિટેડ,Latin,Gujarati,Latin,Latin,cross_script,same
+S1-157064113,S2-732066785,S2,Sky Healthcare Private Limited,સ્કાય હેલ્થકેર પ્રાઇવેટ લિમિટેડ,Latin,Gujarati,Latin,Latin,cross_script,same
+S1-157064113,S3-232709696,S3,Sky Healthcare Private Limited,સ્કાય હેલ્થકેર પ્રાઇવેટ લિમિટેડ,Latin,Gujarati,Latin,Latin,cross_script,same
+S1-435197119,S2-23416594,S2,Arihant Properties,ଅରିହନ୍ତ ପ୍ରୋପର୍ଟିଜ୍,Latin,Oriya,Latin,Latin,cross_script,same
+S1-435197119,S2-976363731,S2,Arihant Properties,ଅରିହନ୍ତ ପ୍ରୋପର୍ଟିଜ୍,Latin,Oriya,Latin,Latin,cross_script,same
+S1-779770033,S2-344418723,S2,Champion & Brothers Private Limited,Dr CHAMPION-& BROTHERS PRIVATE LIMITED,Latin,Latin,Latin,Empty,same,cross_script
+S1-573194865,S3-224592930,S3,Dollins Spruce Inc,DOLLINS SPRUCE INC,Latin,Latin,Latin,Empty,same,cross_script
+S1-536974738,S3-509162315,S3,Primary Care Associates of Rotterdam,Primary Care Associates of Rotterdam Co,Latin,Latin,Latin,Empty,same,cross_script
+S1-342698190,S3-478289654,S3,St. Methodist Church PLLC,St. Méthodist Church PLLC | www.stmthod.com,Latin,Latin,Latin,Empty,same,cross_script
+S1-685871904,S3-740323634,S3,Gonzalez Keycorp LLC,Gonzalez LLC Center Enterprises,Latin,Latin,Latin,Empty,same,cross_script
+S1-798312676,S2-126005750,S2,Vision Impex Private Limited,विजन इम्पेक्स प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-17273223,S2-32135349,S2,Standard Marine Partners Inc.,Standard-Marine Patrnres Inc.,Latin,Latin,Latin,Empty,same,cross_script
+S1-597619383,S3-567956556,S3,Esquire Marketing Private Limited,Esquire Marketing Prmvmase Limited,Latin,Latin,Latin,Empty,same,cross_script
+S1-148802034,S2-309428859,S2,Citadel,Citadel,Latin,Latin,Latin,Empty,same,cross_script
+S1-67726616,S2-941102715,S2,"Cedar Design, LLC","CEDAR DESIGN, LLC",Latin,Latin,Latin,Empty,same,cross_script
+S1-32868848,S3-528706011,S3,Interstate Atlas LLC,Interstate  Atlas LLC,Latin,Latin,Latin,Empty,same,cross_script
+S1-496331216,S2-198865808,S2,Shree Best Business Private Limited,श्री बेस्ट बिजनेस प्राइवेट लिमिटेड,Latin,Devanagari,Latin,Devanagari+Latin,cross_script,overlap
+S1-568364082,S3-336170976,S3,Caque Semiconductor LLC,Caque  Semiconductor LLC,Latin,Latin,Latin,Empty,same,cross_script
+S1-289688571,S2-241013252,S2,Jain Care LLP,जैन केयर एलएलपी,Latin,Devanagari,Latin,Latin,cross_script,same
+S1-34608464,S3-240063798,S3,Patna Properties Private Limited,Patna Properties Prevate Limited,Latin,Latin,Latin,Empty,same,cross_script
+S1-618676054,S3-841214085,S3,Swanson Golden Foods Corp,Swanson Golden Foods  Corp,Latin,Latin,Latin,Empty,same,cross_script
+S1-911911079,S3-957782509,S3,Super 22 Bistro,Super 22  Bistro,Latin,Latin,Latin,Empty,same,cross_script
+S1-136329156,S2-559350920,S2,Baba Care Pvt Ltd,பாபா கேர் பிரைவேட் லிமிடெட்,Latin,Tamil,Latin,Latin+Tamil,cross_script,overlap
+S1-136329156,S3-518441474,S3,Baba Care Pvt Ltd,பாபா கேர் பிரைவேட் லிமிடெட்,Latin,Tamil,Latin,Latin,cross_script,same
+S1-452396218,S2-686109769,S2,Zorana's Grand Services,ZORANA'S GRAND SERVICES INC.,Latin,Latin,Latin,Empty,same,cross_script
+S1-394680937,S3-740785174,S3,Royal Developers Private Limited,Royal Developers Private Ltd,Latin,Latin,Latin,Empty,same,cross_script
+S1-779938927,S2-513873176,S2,Green Care Private Limited,গ্রীন কেয়ার প্রাইভেট লিমিটেড,Latin,Bengali,Latin,Latin,cross_script,same
+S1-779938927,S2-393866570,S2,Green Care Private Limited,গ্রীন কেয়ার প্রাইভেট লিমিটেড,Latin,Bengali,Latin,Latin,cross_script,same
+S1-779938927,S3-899335159,S3,Green Care Private Limited,গ্রীন কেয়ার প্রাইভেট লিমিটেড,Latin,Bengali,Latin,Bengali+Latin,cross_script,overlap
+S1-595843047,S2-182431985,S2,Red Hair Studio,Red Hair,Latin,Latin,Latin,Empty,same,cross_script
+S1-40678525,S3-151381602,S3,Board of Sanitation,Board of (Saninttation),Latin,Latin,Latin,Empty,same,cross_script
+S1-984233875,S2-399828902,S2,Good Business Limited,ગુડ બિઝનેસ લિમિટેડ,Latin,Gujarati,Latin,Gujarati+Latin,cross_script,overlap
+S1-472705054,S2-556469960,S2,Vision Industries Private Limited,Vision Industries Private (Limited),Latin,Latin,Latin,Empty,same,cross_script
+S1-99560436,S3-889312697,S3,Ear Nose & Throat Medicine LLC,Ear & Throat Medicine LLC Center,Latin,Latin,Latin,Empty,same,cross_script
+S1-263741395,S3-27940543,S3,Dynamic Power Private Limited,Dynamic Power Private Ltd,Latin,Latin,Latin,Empty,same,cross_script
+S1-695404178,S3-142775867,S3,Million Marketing Pvt. Ltd.,Million Marketing Pvt. Limited,Latin,Latin,Latin,Empty,same,cross_script
+S1-996931439,S2-6800391,S2,Aeonian Tree Limited,Aeonian Tree Ltd,Latin,Latin,Latin,Empty,same,cross_script
+S1-50344703,S2-320212810,S2,Surgical Care Associates Inc,Surgical Care-Associates Inc,Latin,Latin,Latin,Empty,same,cross_script
+S1-866990988,S3-568895292,S3,"Kelley, Garcia and Frahm Inc","Kelley,  Garcia and Frahm-Inc",Latin,Latin,Latin,Empty,same,cross_script
+S1-761600598,S3-964363321,S3,Maid Tavern,Maid (Tavern),Latin,Latin,Latin,Empty,same,cross_script
+S1-73266388,S3-448329295,S3,Trujillo Sony LLC,Trujillo Soyn LLC,Latin,Latin,Latin,Empty,same,cross_script
+S1-38821044,S3-575237780,S3,United Institute VI,United (Institute),Latin,Latin,Latin,Empty,same,cross_script
+S1-787758125,S2-955863783,S2,South Crystal Aria Inc.,South Aria Inc. Center,Latin,Latin,Latin,Empty,same,cross_script
+S1-9750168,S2-169129232,S2,Lehmann Global,Lehmann Global LP,Latin,Latin,Latin,Empty,same,cross_script
+S1-859741230,S2-82950624,S2,Taylor Cascade Transport Inc,TAYLOR CASCADE TRANSPORT,Latin,Latin,Latin,Empty,same,cross_script
+S1-851816270,S3-22379704,S3,Smith Safe Alpex Inc,Smith Safe  Alpex Inc,Latin,Latin,Latin,Empty,same,cross_script
+S1-255528432,S3-562163935,S3,Physical Therapy Preferred Medicine Inc,Physical Therapy Preferred Medicine (Inc),Latin,Latin,Latin,Empty,same,cross_script
+S1-790418226,S2-555216051,S2,Salzberg Clean Activate LLC,SALZBERG CLEAN  ACTIVATE,Latin,Latin,Latin,Empty,same,cross_script
+S1-491658200,S3-78071645,S3,Baba Infotech Private Limited,Baba-Infotech Private,Latin,Latin,Latin,Empty,same,cross_script
+S1-339001329,S2-671103041,S2,Shital & Sons Private Limited,Shital & Sons Limited Center,Latin,Latin,Latin,Empty,same,cross_script
+S1-27444152,S3-578691751,S3,Martinez Cap LLC,Martinez LLC Services,Latin,Latin,Latin,Empty,same,cross_script
+S1-27444152,S3-153670200,S3,Martinez Cap LLC,Martinez Cap Llc,Latin,Latin,Latin,Empty,same,cross_script
+S1-379082029,S2-980240110,S2,# 4 NA Coinshares,# 4,Latin,NoLetters,Latin,Empty,cross_script,cross_script
+S1-483429758,S3-59403327,S3,# 9 HW Aldabra,# 9,Latin,NoLetters,Latin,Empty,cross_script,cross_script
+S1-476753284,S3-485244139,S3,Alpha Services Private Limited,ஆல்ஃபா சர்வீசஸ் பிரைவேட் லிமிடெட்,Latin,Tamil,Latin,Tamil,cross_script,cross_script
+S1-560962690,S3-639649057,S3,14 7 Bleichroeder Inc,14 7,Latin,NoLetters,Latin,Empty,cross_script,cross_script
+S1-979279203,S2-341140153,S2,21 14 Ashford,21 14,Latin,NoLetters,Latin,Empty,cross_script,cross_script
+S1-766604763,S2-957304782,S2,30 14 Teucrium,30 14,Latin,NoLetters,Latin,Empty,cross_script,cross_script
+S1-450478929,S3-248780975,S3,22 6 Venture LLC,22 6,Latin,NoLetters,Latin,Empty,cross_script,cross_script
+S1-757697220,S2-199435533,S2,1 800 Movers L.L.C.,1 800 800,Latin,NoLetters,Latin,Empty,cross_script,cross_script
+S1-820127369,S2-898690529,S2,# 1 YC America,# 1,Latin,NoLetters,Latin,Empty,cross_script,cross_script
+S1-587450231,S3-112412188,S3,26 18 Network,26 18,Latin,NoLetters,Latin,Empty,cross_script,cross_script
+S1-567716757,S2-18502094,S2,15 11 Plutonian,15 11,Latin,NoLetters,Latin,Empty,cross_script,cross_script
+S1-277746037,S2-408026809,S2,15 12 Pembina Corp,15 12,Latin,NoLetters,Latin,Empty,cross_script,cross_script
+S1-6684419,S2-260842643,S2,# 3 SE Research,# 3,Latin,NoLetters,Latin,Empty,cross_script,cross_script

@@ -1,0 +1,24 @@
+{
+  "experiment": "E004.5",
+  "sample_size": 10000,
+  "total_true_matches": 34768,
+  "raw_untruncated_recall": 0.8790266912103083,
+  "recall_cap80": 0.814053152323976,
+  "recall_cap100": 0.8225379659456972,
+  "recall_cap120": 0.8347618499769903,
+  "mean_candidates_cap80": 56.9337,
+  "mean_candidates_cap100": 67.85,
+  "mean_candidates_cap120": 78.0992,
+  "zero_candidate_entities": 7,
+  "signal_hits": {
+    "exact_name": 7354,
+    "core_name": 12773,
+    "compressed_name": 13319,
+    "name_pairs": 18772,
+    "prefix_pairs": 8697,
+    "addr_sig": 23493,
+    "postal_street": 8704,
+    "rare_tokens": 741
+  },
+  "runtime_seconds": 892.1110301017761
+}

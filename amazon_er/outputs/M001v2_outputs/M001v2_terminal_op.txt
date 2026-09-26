@@ -1,0 +1,108 @@
+[2026-09-26 19:37:42] ===========================================================================
+[2026-09-26 19:37:42] M001v2: SUPERVISED PAIRWISE MATCHING (CHECKPOINTED RESUME ENGINE)
+[2026-09-26 19:37:42] Config: Sample Size = 100,000 S1 Entities | Random Seed = 42
+[2026-09-26 19:37:42] RAM Budget: < 2.0 GB Peak | Checkpoint Dir: e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M001v2_outputs\checkpoints
+[2026-09-26 19:37:42] ===========================================================================
+[2026-09-26 19:37:42] 
+>>> [STAGE 1/4]: Target Indexing & Candidate Generation...
+[2026-09-26 19:37:42] Loading Ground Truth...
+[2026-09-26 19:37:47] Sampling 100,000 S1 Entities...
+[2026-09-26 19:37:51] Total true matches in sample: 345,941
+[2026-09-26 19:37:51] Indexing Source 2 (5,034,616 records)...
+[2026-09-26 19:40:43]   S2 indexed in 172.8s | Targets: 5,034,616
+[2026-09-26 19:40:43] Indexing Source 3 (5,285,603 records)...
+[2026-09-26 19:44:35]   S3 indexed in 231.8s | Total Targets: 10,320,219
+[2026-09-26 19:44:35] Generating candidate pairs for 100,000 S1 entities (max 80 cands/entity)...
+[2026-09-26 19:45:00]   Progress: 10,000/100,000 entities | 566,568 pairs generated | Rate: 406 ent/s
+[2026-09-26 19:45:06]   Progress: 20,000/100,000 entities | 1,128,868 pairs generated | Rate: 646 ent/s
+[2026-09-26 19:45:11]   Progress: 30,000/100,000 entities | 1,688,489 pairs generated | Rate: 829 ent/s
+[2026-09-26 19:45:16]   Progress: 40,000/100,000 entities | 2,255,960 pairs generated | Rate: 970 ent/s
+[2026-09-26 19:45:21]   Progress: 50,000/100,000 entities | 2,827,244 pairs generated | Rate: 1087 ent/s
+[2026-09-26 19:45:26]   Progress: 60,000/100,000 entities | 3,391,758 pairs generated | Rate: 1185 ent/s
+[2026-09-26 19:45:30]   Progress: 70,000/100,000 entities | 3,959,663 pairs generated | Rate: 1270 ent/s
+[2026-09-26 19:45:35]   Progress: 80,000/100,000 entities | 4,529,645 pairs generated | Rate: 1335 ent/s
+[2026-09-26 19:45:40]   Progress: 90,000/100,000 entities | 5,095,484 pairs generated | Rate: 1399 ent/s
+[2026-09-26 19:45:44]   Progress: 100,000/100,000 entities | 5,661,889 pairs generated | Rate: 1445 ent/s
+[2026-09-26 19:45:54] Candidate generation complete! Recall: 80.83% | Total pairs: 5,661,889
+[2026-09-26 19:45:54] Saved to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M001v2_outputs\data\candidates.parquet
+[2026-09-26 19:48:47] 
+>>> [STAGE 2/4]: Extracting 24 Pairwise Features on Candidates...
+[2026-09-26 19:48:48] Unique S1 IDs needed: 99,898 | Unique Target IDs needed: 2,827,326
+[2026-09-26 19:48:48] Loading S1 string lookups...
+[2026-09-26 19:48:53] Loading S2 string lookups...
+[2026-09-26 19:49:29] Loading S3 string lookups...
+[2026-09-26 19:50:02] Lookups built in 74.6s. Computing features in memory-safe chunks...
+[2026-09-26 19:50:16]   Computed features: 500,000/5,661,889 pairs | Rate: 36,718 pairs/sec
+[2026-09-26 19:50:29]   Computed features: 1,000,000/5,661,889 pairs | Rate: 37,422 pairs/sec
+[2026-09-26 19:50:42]   Computed features: 1,500,000/5,661,889 pairs | Rate: 37,757 pairs/sec
+[2026-09-26 19:50:56]   Computed features: 2,000,000/5,661,889 pairs | Rate: 37,705 pairs/sec
+[2026-09-26 19:51:10]   Computed features: 2,500,000/5,661,889 pairs | Rate: 37,402 pairs/sec
+[2026-09-26 19:51:23]   Computed features: 3,000,000/5,661,889 pairs | Rate: 37,557 pairs/sec
+[2026-09-26 19:51:36]   Computed features: 3,500,000/5,661,889 pairs | Rate: 37,680 pairs/sec
+[2026-09-26 19:51:49]   Computed features: 4,000,000/5,661,889 pairs | Rate: 37,743 pairs/sec
+[2026-09-26 19:52:02]   Computed features: 4,500,000/5,661,889 pairs | Rate: 37,776 pairs/sec
+[2026-09-26 19:52:15]   Computed features: 5,000,000/5,661,889 pairs | Rate: 37,802 pairs/sec
+[2026-09-26 19:52:29]   Computed features: 5,500,000/5,661,889 pairs | Rate: 37,692 pairs/sec
+[2026-09-26 19:52:33] Assembling feature DataFrame...
+[2026-09-26 19:52:51] Feature extraction complete! Saved 5,661,889 rows to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M001v2_outputs\data\features.parquet
+[2026-09-26 19:52:55] 
+>>> [STAGE 3/4]: Grouped 5-Fold LightGBM Training (Leak-Free by s1_id)...
+[2026-09-26 19:52:56] 
+--- Training Fold 1 / 5 ---
+[2026-09-26 19:53:44]   Fold 1 Best Iteration: 600 | Model saved to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M001v2_outputs\models\lgb_model_fold_0.txt
+[2026-09-26 19:53:44] 
+--- Training Fold 2 / 5 ---
+[2026-09-26 19:54:27]   Fold 2 Best Iteration: 456 | Model saved to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M001v2_outputs\models\lgb_model_fold_1.txt
+[2026-09-26 19:54:27] 
+--- Training Fold 3 / 5 ---
+[2026-09-26 19:55:31]   Fold 3 Best Iteration: 552 | Model saved to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M001v2_outputs\models\lgb_model_fold_2.txt
+[2026-09-26 19:55:31] 
+--- Training Fold 4 / 5 ---
+[2026-09-26 19:56:35]   Fold 4 Best Iteration: 600 | Model saved to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M001v2_outputs\models\lgb_model_fold_3.txt
+[2026-09-26 19:56:35] 
+--- Training Fold 5 / 5 ---
+[2026-09-26 19:57:38]   Fold 5 Best Iteration: 571 | Model saved to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M001v2_outputs\models\lgb_model_fold_4.txt
+[2026-09-26 19:57:40] 
+Training Complete! OOF predictions saved to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M001v2_outputs\data\oof_predictions.parquet
+[2026-09-26 19:57:40] Top 5 Most Important Features:
+            feature  importance_gain
+cross_name_addr_sim     5.641821e+06
+  min_name_addr_sim     2.358113e+06
+     addr_token_set     1.382223e+06
+    addr_token_sort     8.614033e+05
+addr_number_jaccard     6.857767e+05
+[2026-09-26 19:57:41] 
+>>> [STAGE 4/4]: Optimizing Decision Threshold & Singleton Abstention...
+[2026-09-26 19:57:47] Sweeping 19 thresholds from 0.2 to 0.92 on 99,898 entities...
+[2026-09-26 19:57:48]   Threshold 0.20: Macro-F0.5 = 0.8221 | Prec = 0.8611 | Rec = 0.7894 | SingAcc = 0.6996
+[2026-09-26 19:57:49]   Threshold 0.24: Macro-F0.5 = 0.8296 | Prec = 0.8714 | Rec = 0.7862 | SingAcc = 0.7389
+[2026-09-26 19:57:50]   Threshold 0.28: Macro-F0.5 = 0.8357 | Prec = 0.8801 | Rec = 0.7829 | SingAcc = 0.7742
+[2026-09-26 19:57:51]   Threshold 0.32: Macro-F0.5 = 0.8399 | Prec = 0.8864 | Rec = 0.7795 | SingAcc = 0.7993
+[2026-09-26 19:57:52]   Threshold 0.36: Macro-F0.5 = 0.8428 | Prec = 0.8912 | Rec = 0.7762 | SingAcc = 0.8167
+[2026-09-26 19:57:53]   Threshold 0.40: Macro-F0.5 = 0.8449 | Prec = 0.8950 | Rec = 0.7731 | SingAcc = 0.8330
+[2026-09-26 19:57:54]   Threshold 0.44: Macro-F0.5 = 0.8467 | Prec = 0.8985 | Rec = 0.7696 | SingAcc = 0.8486
+[2026-09-26 19:57:55]   Threshold 0.48: Macro-F0.5 = 0.8486 | Prec = 0.9024 | Rec = 0.7657 | SingAcc = 0.8662
+[2026-09-26 19:57:56]   Threshold 0.52: Macro-F0.5 = 0.8497 | Prec = 0.9053 | Rec = 0.7618 | SingAcc = 0.8798
+[2026-09-26 19:57:57]   Threshold 0.56: Macro-F0.5 = 0.8504 | Prec = 0.9077 | Rec = 0.7581 | SingAcc = 0.8899
+[2026-09-26 19:57:58]   Threshold 0.60: Macro-F0.5 = 0.8508 | Prec = 0.9096 | Rec = 0.7542 | SingAcc = 0.9026
+[2026-09-26 19:57:59]   Threshold 0.64: Macro-F0.5 = 0.8508 | Prec = 0.9120 | Rec = 0.7482 | SingAcc = 0.9162
+[2026-09-26 19:58:00]   Threshold 0.68: Macro-F0.5 = 0.8501 | Prec = 0.9129 | Rec = 0.7437 | SingAcc = 0.9254
+[2026-09-26 19:58:02]   Threshold 0.72: Macro-F0.5 = 0.8490 | Prec = 0.9137 | Rec = 0.7385 | SingAcc = 0.9354
+[2026-09-26 19:58:03]   Threshold 0.76: Macro-F0.5 = 0.8469 | Prec = 0.9141 | Rec = 0.7310 | SingAcc = 0.9440
+[2026-09-26 19:58:05]   Threshold 0.80: Macro-F0.5 = 0.8440 | Prec = 0.9134 | Rec = 0.7234 | SingAcc = 0.9530
+[2026-09-26 19:58:06]   Threshold 0.84: Macro-F0.5 = 0.8396 | Prec = 0.9119 | Rec = 0.7138 | SingAcc = 0.9614
+[2026-09-26 19:58:07]   Threshold 0.88: Macro-F0.5 = 0.8333 | Prec = 0.9095 | Rec = 0.7008 | SingAcc = 0.9708
+[2026-09-26 19:58:08]   Threshold 0.92: Macro-F0.5 = 0.8210 | Prec = 0.9031 | Rec = 0.6791 | SingAcc = 0.9805
+[2026-09-26 19:58:08] 
+===========================================================================
+[2026-09-26 19:58:08] M001v2 EXPERIMENT RESULTS (OFFICIAL COMPETITION EVALUATOR)
+[2026-09-26 19:58:08] ===========================================================================
+[2026-09-26 19:58:08] Best Official Macro-F0.5 : 0.8508  (at Threshold = 0.60)
+[2026-09-26 19:58:08] Macro-Precision          : 0.9096
+[2026-09-26 19:58:08] Macro-Recall             : 0.7542
+[2026-09-26 19:58:08] Singleton Accuracy       : 90.26%
+[2026-09-26 19:58:08] Total Evaluated Entities : 99,898
+[2026-09-26 19:58:08] Total Pipeline Runtime   : 1225.6s (20.4 minutes)
+[2026-09-26 19:58:08] ===========================================================================
+[2026-09-26 19:58:08] 
+All artifacts successfully saved to: e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M001v2_outputs

@@ -1,0 +1,6 @@
+experiment,candidate_recall,mean_candidates,total_pairs
+E002 (Baseline Combined),61.83%,2279.2,"22,791,768"
+E003 (Compact Blocking),56.19%,59.5,"595,455"
+E004 (Multi-Signal),70.89%,67.7,"676,710"
+E004.5 (Weighted Rank@100),82.25%,67.8,"678,500"
+E004.5 (Weighted Rank@120),83.48%,78.1,"780,992"

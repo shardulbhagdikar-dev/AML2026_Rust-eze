@@ -1,0 +1,56 @@
+======================================================================
+E004.5: MULTI-SIGNAL WEIGHTED RANKING & POSTAL ANCHORS
+Timestamp: 2026-09-26 18:41:15
+======================================================================
+
+Loading Ground Truth...
+Selecting 10,000 S1 sample (fixed seed=42)...
+Sample S1 count: 10,000
+Total true matches in sample: 34,768
+
+Indexing Source 2 (5,034,616 records)...
+  S2 indexed in 260.0s | Stored: 5,034,616
+
+Indexing Source 3 (5,285,603 records)...
+  S3 indexed in 591.7s | Total Stored: 10,320,219
+
+Evaluating Candidate Retrieval across multiple capacity tiers...
+
+======================================================================
+E004.5 BENCHMARK RESULTS
+======================================================================
+Raw Untruncated Recall Ceiling: 87.90% (30,562 / 34,768)
+----------------------------------------------------------------------
+Cap @ 80  Candidates: Recall =  81.41% (28,303) | Mean Cands/S1 = 56.9
+Cap @ 100 Candidates: Recall =  82.25% (28,598) | Mean Cands/S1 = 67.8
+Cap @ 120 Candidates: Recall =  83.48% (29,023) | Mean Cands/S1 = 78.1
+----------------------------------------------------------------------
+Zero-candidate S1 rate (Cap 100): 0.07% (7 entities)
+Retrieval Speed: 350 entities/sec (28.6s)
+Total Pipeline Time: 892.1s
+======================================================================
+
+Signal-by-Signal Isolated Coverage:
+  • exact_name        :  21.15% (7,354 matches found)
+  • core_name         :  36.74% (12,773 matches found)
+  • compressed_name   :  38.31% (13,319 matches found)
+  • name_pairs        :  53.99% (18,772 matches found)
+  • addr_sig          :  67.57% (23,493 matches found)
+  • postal_street     :  25.03% (8,704 matches found)
+  • prefix_pairs      :  25.01% (8,697 matches found)
+  • rare_tokens       :   2.13% (741 matches found)
+
+Signal attribution saved to: e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\E004.5_outputs\E004.5_signal_attribution.csv
+
+======================================================================
+PROGRESSION COMPARISON (E002 -> E003 -> E004 -> E004.5)
+======================================================================
+  E002 (Baseline Combined)   : Recall = 61.83% | Mean Cands = 2279.2 | Pairs = 22,791,768
+  E003 (Compact Blocking)    : Recall = 56.19% | Mean Cands =   59.5 | Pairs = 595,455
+  E004 (Multi-Signal)        : Recall = 70.89% | Mean Cands =   67.7 | Pairs = 676,710
+  E004.5 (Weighted Rank@100) : Recall = 82.25% | Mean Cands =   67.8 | Pairs = 678,500
+  E004.5 (Weighted Rank@120) : Recall = 83.48% | Mean Cands =   78.1 | Pairs = 780,992
+======================================================================
+Strategy comparison saved to: e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\E004.5_outputs\E004.5_strategy_comparison.csv
+Saved 52 missed pairs sample to: e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\E004.5_outputs\missed_pairs_sample.csv
+Metrics saved to: e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\E004.5_outputs\metrics.json

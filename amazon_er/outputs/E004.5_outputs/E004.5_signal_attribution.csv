@@ -1,0 +1,9 @@
+signal,matches_found,recall_percent
+exact_name,7354,21.15
+core_name,12773,36.74
+compressed_name,13319,38.31
+name_pairs,18772,53.99
+addr_sig,23493,67.57
+postal_street,8704,25.03
+prefix_pairs,8697,25.01
+rare_tokens,741,2.13

@@ -9,6 +9,14 @@ true_pair_script_analysis.csv
 matched_entity_frequency.csv
 s1_ground_truth_analysis.csv
 candidate_pairs.tsv
+matching_results.tsv
+*.parquet
+*.parquet.*
+*/data/
+**/data/
+checkpoints/
+*/checkpoints/
+**/checkpoints/
 
 # Python and Jupyter artifacts
 __pycache__/

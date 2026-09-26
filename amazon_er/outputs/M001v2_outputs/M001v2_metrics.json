@@ -1,0 +1,11 @@
+{
+  "experiment": "M001v2",
+  "sample_size": 100000,
+  "best_threshold": 0.6,
+  "best_macro_f05": 0.8508418915279369,
+  "macro_precision": 0.909638115148763,
+  "macro_recall": 0.7542388474339501,
+  "singleton_accuracy": 0.9026183644189383,
+  "total_entities_evaluated": 99898,
+  "runtime_seconds": 1225.628894329071
+}

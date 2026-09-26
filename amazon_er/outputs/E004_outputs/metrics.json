@@ -1,0 +1,21 @@
+{
+  "experiment": "E004",
+  "sample_size": 10000,
+  "total_true_matches": 34768,
+  "true_matches_found": 24648,
+  "candidate_recall": 0.708927749654855,
+  "total_candidates": 676710,
+  "mean_candidates_per_s1": 67.671,
+  "median_candidates_per_s1": 100,
+  "zero_candidate_entities": 7,
+  "signal_hits": {
+    "exact_name": 7354,
+    "core_name": 12814,
+    "compressed_name": 13381,
+    "name_pairs": 18772,
+    "prefix_pairs": 9072,
+    "addr_sig": 23493,
+    "rare_tokens": 243
+  },
+  "runtime_seconds": 28.26975393295288
+}

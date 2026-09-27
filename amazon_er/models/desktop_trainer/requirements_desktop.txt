@@ -1,0 +1,8 @@
+catboost>=1.2.5
+lightgbm>=4.3.0
+xgboost>=2.0.0
+rapidfuzz>=3.8.0
+anyascii>=0.3.2
+pandas>=2.0.0
+numpy>=1.24.0
+pyarrow>=14.0.0

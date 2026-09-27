@@ -1,0 +1,7 @@
+{
+  "sample_size": 1000,
+  "pure_lgbm_f05": 0.8847630483403185,
+  "blend_gbdt_f05": 0.9023167654654465,
+  "hybrid_ce_f05": 0.9035606702824353,
+  "total_runtime_seconds": 66.52220249176025
+}

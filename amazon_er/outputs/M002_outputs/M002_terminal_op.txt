@@ -1,0 +1,112 @@
+[2026-09-26 22:48:27] ===========================================================================
+[2026-09-26 22:48:27] M002: ENHANCED PAIRWISE MATCHING & BIPARTITE DISAMBIGUATION
+[2026-09-26 22:48:27] Config: Sample Size = 100,000 S1 Entities | Random Seed = 42
+[2026-09-26 22:48:27] RAM Budget: < 2.0 GB Peak | Checkpoint Dir: e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M002_outputs\checkpoints
+[2026-09-26 22:48:27] ===========================================================================
+[2026-09-26 22:48:27] 
+>>> [STAGE 1/4]: Target Indexing & Candidate Generation (Cap = 100)...
+[2026-09-26 22:48:27] Loading Ground Truth...
+[2026-09-26 22:48:31] Sampling 100,000 S1 Entities...
+[2026-09-26 22:48:35] Total true matches in sample: 345,941
+[2026-09-26 22:48:35] Indexing Source 2 (5,034,616 records)...
+[2026-09-26 22:52:34]   S2 indexed in 239.2s | Targets: 5,034,616
+[2026-09-26 22:52:34] Indexing Source 3 (5,285,603 records)...
+[2026-09-26 22:59:56]   S3 indexed in 442.1s | Total Targets: 10,320,219
+[2026-09-26 22:59:56] Generating candidate pairs for 100,000 S1 entities (max 100 cands/entity)...
+[2026-09-26 23:00:29]   Progress: 10,000/100,000 entities | 885,560 pairs generated | Rate: 307 ent/s
+[2026-09-26 23:00:38]   Progress: 20,000/100,000 entities | 1,772,321 pairs generated | Rate: 474 ent/s
+[2026-09-26 23:00:47]   Progress: 30,000/100,000 entities | 2,649,150 pairs generated | Rate: 587 ent/s
+[2026-09-26 23:00:56]   Progress: 40,000/100,000 entities | 3,536,436 pairs generated | Rate: 672 ent/s
+[2026-09-26 23:01:04]   Progress: 50,000/100,000 entities | 4,428,375 pairs generated | Rate: 739 ent/s
+[2026-09-26 23:01:12]   Progress: 60,000/100,000 entities | 5,315,153 pairs generated | Rate: 792 ent/s
+[2026-09-26 23:01:20]   Progress: 70,000/100,000 entities | 6,204,569 pairs generated | Rate: 830 ent/s
+[2026-09-26 23:01:29]   Progress: 80,000/100,000 entities | 7,093,569 pairs generated | Rate: 862 ent/s
+[2026-09-26 23:01:37]   Progress: 90,000/100,000 entities | 7,979,023 pairs generated | Rate: 889 ent/s
+[2026-09-26 23:01:46]   Progress: 100,000/100,000 entities | 8,864,419 pairs generated | Rate: 911 ent/s
+[2026-09-26 23:01:59] Candidate generation complete! Recall: 84.39% | Total pairs: 8,864,419
+[2026-09-26 23:01:59] Saved to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M002_outputs\data\candidates.parquet
+[2026-09-26 23:06:25] 
+>>> [STAGE 2/4]: Extracting 30 Enhanced Pairwise Features on Candidates...
+[2026-09-26 23:06:27] Unique S1 IDs needed: 99,987 | Unique Target IDs needed: 3,452,884
+[2026-09-26 23:06:27] Loading S1 string lookups...
+[2026-09-26 23:06:32] Loading S2 string lookups...
+[2026-09-26 23:07:16] Loading S3 string lookups...
+[2026-09-26 23:07:56] Lookups built in 91.2s. Computing features in memory-safe chunks...
+[2026-09-26 23:08:16]   Computed features: 500,000/8,864,419 pairs | Rate: 27,216 pairs/sec
+[2026-09-26 23:08:34]   Computed features: 1,000,000/8,864,419 pairs | Rate: 27,848 pairs/sec
+[2026-09-26 23:08:51]   Computed features: 1,500,000/8,864,419 pairs | Rate: 27,884 pairs/sec
+[2026-09-26 23:09:09]   Computed features: 2,000,000/8,864,419 pairs | Rate: 28,042 pairs/sec
+[2026-09-26 23:09:28]   Computed features: 2,500,000/8,864,419 pairs | Rate: 27,797 pairs/sec
+[2026-09-26 23:09:45]   Computed features: 3,000,000/8,864,419 pairs | Rate: 27,904 pairs/sec
+[2026-09-26 23:10:03]   Computed features: 3,500,000/8,864,419 pairs | Rate: 27,953 pairs/sec
+[2026-09-26 23:10:21]   Computed features: 4,000,000/8,864,419 pairs | Rate: 27,988 pairs/sec
+[2026-09-26 23:10:38]   Computed features: 4,500,000/8,864,419 pairs | Rate: 28,016 pairs/sec
+[2026-09-26 23:10:56]   Computed features: 5,000,000/8,864,419 pairs | Rate: 28,079 pairs/sec
+[2026-09-26 23:11:14]   Computed features: 5,500,000/8,864,419 pairs | Rate: 27,960 pairs/sec
+[2026-09-26 23:11:33]   Computed features: 6,000,000/8,864,419 pairs | Rate: 27,910 pairs/sec
+[2026-09-26 23:11:51]   Computed features: 6,500,000/8,864,419 pairs | Rate: 27,831 pairs/sec
+[2026-09-26 23:12:24]   Computed features: 7,000,000/8,864,419 pairs | Rate: 26,281 pairs/sec
+[2026-09-26 23:12:46]   Computed features: 7,500,000/8,864,419 pairs | Rate: 26,043 pairs/sec
+[2026-09-26 23:13:10]   Computed features: 8,000,000/8,864,419 pairs | Rate: 25,569 pairs/sec
+[2026-09-26 23:13:35]   Computed features: 8,500,000/8,864,419 pairs | Rate: 25,222 pairs/sec
+[2026-09-26 23:13:53] Assembling feature DataFrame...
+[2026-09-26 23:15:23] Saved 8,864,419 feature rows to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M002_outputs\data\features.parquet
+[2026-09-26 23:16:01] 
+>>> [STAGE 3/4]: Grouped 5-Fold LightGBM Training (Leak-Free by S1 entity)...
+[2026-09-26 23:16:02] 
+--- Training Fold 1 / 5 ---
+[2026-09-26 23:18:13]   Fold 1 Best Iteration: 621 | Model saved to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M002_outputs\models\lgb_model_fold_0.txt
+[2026-09-26 23:18:13] 
+--- Training Fold 2 / 5 ---
+[2026-09-26 23:20:04]   Fold 2 Best Iteration: 493 | Model saved to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M002_outputs\models\lgb_model_fold_1.txt
+[2026-09-26 23:20:04] 
+--- Training Fold 3 / 5 ---
+[2026-09-26 23:22:23]   Fold 3 Best Iteration: 593 | Model saved to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M002_outputs\models\lgb_model_fold_2.txt
+[2026-09-26 23:22:23] 
+--- Training Fold 4 / 5 ---
+[2026-09-26 23:25:09]   Fold 4 Best Iteration: 792 | Model saved to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M002_outputs\models\lgb_model_fold_3.txt
+[2026-09-26 23:25:09] 
+--- Training Fold 5 / 5 ---
+[2026-09-26 23:27:45]   Fold 5 Best Iteration: 696 | Model saved to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M002_outputs\models\lgb_model_fold_4.txt
+[2026-09-26 23:27:48] 
+Training Complete! OOF predictions saved to e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M002_outputs\data\oof_predictions.parquet
+[2026-09-26 23:27:48] Top 7 Most Important Features:
+              feature  importance_gain
+  cross_name_addr_sim     1.320423e+07
+house_number_mismatch     4.628381e+06
+  addr_number_jaccard     2.135803e+06
+    min_name_addr_sim     1.590366e+06
+       addr_token_set     1.570620e+06
+   addr_token_jaccard     1.205137e+06
+    max_name_addr_sim     9.048202e+05
+[2026-09-26 23:27:49] 
+>>> [STAGE 4/4]: Optimizing Decision Threshold & Bipartite Disambiguation...
+[2026-09-26 23:27:53] Running threshold search with and without Bipartite Disambiguation...
+[2026-09-26 23:27:56]   Thresh 0.30: Standard F0.5 = 0.8482 | Bipartite F0.5 = 0.8515 (Prec: 0.8878)
+[2026-09-26 23:28:00]   Thresh 0.34: Standard F0.5 = 0.8543 | Bipartite F0.5 = 0.8565 (Prec: 0.8959)
+[2026-09-26 23:28:04]   Thresh 0.38: Standard F0.5 = 0.8576 | Bipartite F0.5 = 0.8595 (Prec: 0.9009)
+[2026-09-26 23:28:07]   Thresh 0.42: Standard F0.5 = 0.8604 | Bipartite F0.5 = 0.8619 (Prec: 0.9054)
+[2026-09-26 23:28:11]   Thresh 0.46: Standard F0.5 = 0.8623 | Bipartite F0.5 = 0.8636 (Prec: 0.9089)
+[2026-09-26 23:28:14]   Thresh 0.50: Standard F0.5 = 0.8636 | Bipartite F0.5 = 0.8648 (Prec: 0.9117)
+[2026-09-26 23:28:18]   Thresh 0.54: Standard F0.5 = 0.8644 | Bipartite F0.5 = 0.8655 (Prec: 0.9139)
+[2026-09-26 23:28:21]   Thresh 0.58: Standard F0.5 = 0.8659 | Bipartite F0.5 = 0.8665 (Prec: 0.9176)
+[2026-09-26 23:28:25]   Thresh 0.62: Standard F0.5 = 0.8664 | Bipartite F0.5 = 0.8667 (Prec: 0.9201)
+[2026-09-26 23:28:29]   Thresh 0.66: Standard F0.5 = 0.8664 | Bipartite F0.5 = 0.8666 (Prec: 0.9221)
+[2026-09-26 23:28:32]   Thresh 0.70: Standard F0.5 = 0.8658 | Bipartite F0.5 = 0.8660 (Prec: 0.9234)
+[2026-09-26 23:28:36]   Thresh 0.74: Standard F0.5 = 0.8648 | Bipartite F0.5 = 0.8649 (Prec: 0.9243)
+[2026-09-26 23:28:39]   Thresh 0.78: Standard F0.5 = 0.8627 | Bipartite F0.5 = 0.8628 (Prec: 0.9244)
+[2026-09-26 23:28:43]   Thresh 0.82: Standard F0.5 = 0.8593 | Bipartite F0.5 = 0.8593 (Prec: 0.9235)
+[2026-09-26 23:28:46]   Thresh 0.86: Standard F0.5 = 0.8536 | Bipartite F0.5 = 0.8536 (Prec: 0.9214)
+[2026-09-26 23:28:46] 
+===========================================================================
+[2026-09-26 23:28:46] M002 EXPERIMENT RESULTS (OFFICIAL COMPETITION EVALUATOR)
+[2026-09-26 23:28:46] ===========================================================================
+[2026-09-26 23:28:46] Best Official Macro-F0.5 : 0.8667  (Mode: bipartite, Threshold = 0.62)
+[2026-09-26 23:28:46] Macro-Precision          : 0.9201
+[2026-09-26 23:28:46] Macro-Recall             : 0.7768
+[2026-09-26 23:28:46] Singleton Accuracy       : 90.85%
+[2026-09-26 23:28:46] Total Evaluated Entities : 99,987
+[2026-09-26 23:28:46] Total Pipeline Runtime   : 2419.6s (40.3 minutes)
+[2026-09-26 23:28:46] ===========================================================================
+[2026-09-26 23:28:46] 
+All artifacts successfully saved to: e:\Amazon_ML_Challenge\6ab10eb3b23ba_student_resource\student_resource\amazon_er\outputs\M002_outputs

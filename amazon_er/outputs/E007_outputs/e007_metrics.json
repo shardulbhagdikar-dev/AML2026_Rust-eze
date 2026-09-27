@@ -1,0 +1,38 @@
+{
+  "experiment": "E007",
+  "sample_size": 10000,
+  "total_true_matches": 34768,
+  "untruncated_recall": 93.60618959963185,
+  "caps": [
+    {
+      "cap": 60,
+      "true_found": 29063,
+      "recall": 83.5912,
+      "mean_candidates": 55.8
+    },
+    {
+      "cap": 80,
+      "true_found": 29509,
+      "recall": 84.874,
+      "mean_candidates": 73.3
+    },
+    {
+      "cap": 100,
+      "true_found": 29837,
+      "recall": 85.8174,
+      "mean_candidates": 90.6
+    },
+    {
+      "cap": 120,
+      "true_found": 30128,
+      "recall": 86.6544,
+      "mean_candidates": 107.6
+    },
+    {
+      "cap": 150,
+      "true_found": 30520,
+      "recall": 87.7819,
+      "mean_candidates": 132.9
+    }
+  ]
+}
